@@ -1,0 +1,44 @@
+name: Deploy dbt Docs to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main  # メインブランチへの push 時に実行
+
+# GITHUB_TOKEN にリポジトリの contents への書き込み権限を与える
+permissions:
+  contents: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Python 3.11.4
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.11.4
+
+      - name: Install dbt
+        run: |
+          pip install dbt-core dbt-duckdb
+          dbt deps
+
+      - name: Generate dbt docs
+        run: |
+          dbt docs generate
+
+      - name: Copy to docs directory
+        run: |
+          mkdir -p docs
+          cp target/index.html target/catalog.json target/manifest.json docs/
+
+      - name: Auto Commit & Push changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          branch: main
+          commit_message: Generate dbt docs
+          file_pattern: 'docs/*.html docs/*.json'

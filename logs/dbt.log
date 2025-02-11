@@ -7554,3 +7554,1255 @@ having count(*) > 1
 [0m17:49:17.834264 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105c19240>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105cdd540>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107ed5a50>]}
 [0m17:49:17.834496 [debug] [MainThread]: Flushing usage events
 [0m17:49:18.628227 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:05:44.228587 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1053bd2d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1061cfee0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1061ced40>]}
+
+
+============================== 18:05:44.231908 | 01037234-5481-41f2-809d-f0360ecd3568 ==============================
+[0m18:05:44.231908 [info ] [MainThread]: Running with dbt=1.9.2
+[0m18:05:44.232269 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/takeshiiijima/github/duckdb-dbt', 'fail_fast': 'False', 'version_check': 'True', 'log_path': '/Users/takeshiiijima/github/duckdb-dbt/logs', 'warn_error': 'None', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'invocation_command': 'dbt compile --select analysis:my_analysis', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m18:05:44.385904 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '01037234-5481-41f2-809d-f0360ecd3568', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10446b640>]}
+[0m18:05:44.415324 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '01037234-5481-41f2-809d-f0360ecd3568', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1063ed4b0>]}
+[0m18:05:44.418189 [info ] [MainThread]: Registered adapter: duckdb=1.9.1
+[0m18:05:44.474210 [debug] [MainThread]: checksum: 12b12750b70de726cfd89136b8e24afc3f3e77597a97bff40ab7e5f9b39d5e18, vars: {}, profile: , target: , version: 1.9.2
+[0m18:05:44.558913 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m18:05:44.559382 [debug] [MainThread]: Partial parsing: updated file: my_star_schema_project://models/schema.yml
+[0m18:05:44.616548 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '01037234-5481-41f2-809d-f0360ecd3568', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106787e80>]}
+[0m18:05:44.666044 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/takeshiiijima/github/duckdb-dbt/target/manifest.json
+[0m18:05:44.667517 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/takeshiiijima/github/duckdb-dbt/target/semantic_manifest.json
+[0m18:05:44.678627 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '01037234-5481-41f2-809d-f0360ecd3568', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1067ea680>]}
+[0m18:05:44.678964 [info ] [MainThread]: Found 5 models, 4 seeds, 10 data tests, 426 macros
+[0m18:05:44.679174 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '01037234-5481-41f2-809d-f0360ecd3568', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1067fc100>]}
+[0m18:05:44.679498 [error] [MainThread]: Encountered an error:
+Runtime Error
+  'analysis' is not a valid method name
+[0m18:05:44.680680 [debug] [MainThread]: Resource report: {"command_name": "compile", "command_success": false, "command_wall_clock_time": 0.49662536, "process_in_blocks": "0", "process_kernel_time": 0.163144, "process_mem_max_rss": "112427008", "process_out_blocks": "0", "process_user_time": 1.018084}
+[0m18:05:44.680911 [debug] [MainThread]: Command `dbt compile` failed at 18:05:44.680866 after 0.50 seconds
+[0m18:05:44.681112 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1053bd2d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1067ebfd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1067e84f0>]}
+[0m18:05:44.681297 [debug] [MainThread]: Flushing usage events
+[0m18:05:45.619563 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:06:15.357597 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1046c5240>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10679b220>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10679aad0>]}
+
+
+============================== 18:06:15.360620 | 1f4fa206-a5e7-4e01-ba2d-863d813fef1f ==============================
+[0m18:06:15.360620 [info ] [MainThread]: Running with dbt=1.9.2
+[0m18:06:15.360970 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': '/Users/takeshiiijima/github/duckdb-dbt/logs', 'profiles_dir': '/Users/takeshiiijima/github/duckdb-dbt', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt compile', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m18:06:15.514274 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '1f4fa206-a5e7-4e01-ba2d-863d813fef1f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10615e320>]}
+[0m18:06:15.548655 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '1f4fa206-a5e7-4e01-ba2d-863d813fef1f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1069f14e0>]}
+[0m18:06:15.552970 [info ] [MainThread]: Registered adapter: duckdb=1.9.1
+[0m18:06:15.608520 [debug] [MainThread]: checksum: 12b12750b70de726cfd89136b8e24afc3f3e77597a97bff40ab7e5f9b39d5e18, vars: {}, profile: , target: , version: 1.9.2
+[0m18:06:15.690289 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m18:06:15.690560 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m18:06:15.721456 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '1f4fa206-a5e7-4e01-ba2d-863d813fef1f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106b50730>]}
+[0m18:06:15.771725 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/takeshiiijima/github/duckdb-dbt/target/manifest.json
+[0m18:06:15.772933 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/takeshiiijima/github/duckdb-dbt/target/semantic_manifest.json
+[0m18:06:15.782095 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '1f4fa206-a5e7-4e01-ba2d-863d813fef1f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106e946a0>]}
+[0m18:06:15.782417 [info ] [MainThread]: Found 5 models, 4 seeds, 10 data tests, 426 macros
+[0m18:06:15.782618 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '1f4fa206-a5e7-4e01-ba2d-863d813fef1f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106c252a0>]}
+[0m18:06:15.783779 [info ] [MainThread]: 
+[0m18:06:15.783993 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m18:06:15.784159 [info ] [MainThread]: 
+[0m18:06:15.784505 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m18:06:15.787841 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_duckdb_main'
+[0m18:06:15.819965 [debug] [ThreadPool]: Using duckdb connection "list_duckdb_main"
+[0m18:06:15.820460 [debug] [ThreadPool]: On list_duckdb_main: BEGIN
+[0m18:06:15.820653 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m18:06:15.876376 [debug] [ThreadPool]: SQL status: OK in 0.056 seconds
+[0m18:06:15.876699 [debug] [ThreadPool]: Using duckdb connection "list_duckdb_main"
+[0m18:06:15.876905 [debug] [ThreadPool]: On list_duckdb_main: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "my_star_schema_profile", "target_name": "dev", "connection_name": "list_duckdb_main"} */
+select
+      'duckdb' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main'
+    and lower(table_catalog) = 'duckdb'
+  
+[0m18:06:15.900045 [debug] [ThreadPool]: SQL status: OK in 0.023 seconds
+[0m18:06:15.901362 [debug] [ThreadPool]: On list_duckdb_main: ROLLBACK
+[0m18:06:15.901994 [debug] [ThreadPool]: Failed to rollback 'list_duckdb_main'
+[0m18:06:15.902164 [debug] [ThreadPool]: On list_duckdb_main: Close
+[0m18:06:15.904615 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '1f4fa206-a5e7-4e01-ba2d-863d813fef1f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106e94cd0>]}
+[0m18:06:15.906345 [debug] [Thread-1 (]: Began running node seed.my_star_schema_project.customers
+[0m18:06:15.906617 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_duckdb_main, now seed.my_star_schema_project.customers)
+[0m18:06:15.906826 [debug] [Thread-1 (]: Began compiling node seed.my_star_schema_project.customers
+[0m18:06:15.910760 [debug] [Thread-1 (]: Began executing node seed.my_star_schema_project.customers
+[0m18:06:15.911120 [debug] [Thread-1 (]: Finished running node seed.my_star_schema_project.customers
+[0m18:06:15.911322 [debug] [Thread-1 (]: Began running node seed.my_star_schema_project.dates
+[0m18:06:15.911586 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly seed.my_star_schema_project.customers, now seed.my_star_schema_project.dates)
+[0m18:06:15.911771 [debug] [Thread-1 (]: Began compiling node seed.my_star_schema_project.dates
+[0m18:06:15.912758 [debug] [Thread-1 (]: Began executing node seed.my_star_schema_project.dates
+[0m18:06:15.913063 [debug] [Thread-1 (]: Finished running node seed.my_star_schema_project.dates
+[0m18:06:15.913247 [debug] [Thread-1 (]: Began running node seed.my_star_schema_project.products
+[0m18:06:15.913482 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly seed.my_star_schema_project.dates, now seed.my_star_schema_project.products)
+[0m18:06:15.913663 [debug] [Thread-1 (]: Began compiling node seed.my_star_schema_project.products
+[0m18:06:15.914649 [debug] [Thread-1 (]: Began executing node seed.my_star_schema_project.products
+[0m18:06:15.914963 [debug] [Thread-1 (]: Finished running node seed.my_star_schema_project.products
+[0m18:06:15.915146 [debug] [Thread-1 (]: Began running node seed.my_star_schema_project.sales
+[0m18:06:15.915368 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly seed.my_star_schema_project.products, now seed.my_star_schema_project.sales)
+[0m18:06:15.915543 [debug] [Thread-1 (]: Began compiling node seed.my_star_schema_project.sales
+[0m18:06:15.916531 [debug] [Thread-1 (]: Began executing node seed.my_star_schema_project.sales
+[0m18:06:15.916827 [debug] [Thread-1 (]: Finished running node seed.my_star_schema_project.sales
+[0m18:06:15.917016 [debug] [Thread-1 (]: Began running node model.my_star_schema_project.dim_customers
+[0m18:06:15.917267 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly seed.my_star_schema_project.sales, now model.my_star_schema_project.dim_customers)
+[0m18:06:15.917455 [debug] [Thread-1 (]: Began compiling node model.my_star_schema_project.dim_customers
+[0m18:06:15.919806 [debug] [Thread-1 (]: Writing injected SQL for node "model.my_star_schema_project.dim_customers"
+[0m18:06:15.920364 [debug] [Thread-1 (]: Began executing node model.my_star_schema_project.dim_customers
+[0m18:06:15.920742 [debug] [Thread-1 (]: Finished running node model.my_star_schema_project.dim_customers
+[0m18:06:15.920955 [debug] [Thread-1 (]: Began running node model.my_star_schema_project.dim_dates
+[0m18:06:15.921180 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.my_star_schema_project.dim_customers, now model.my_star_schema_project.dim_dates)
+[0m18:06:15.921369 [debug] [Thread-1 (]: Began compiling node model.my_star_schema_project.dim_dates
+[0m18:06:15.922954 [debug] [Thread-1 (]: Writing injected SQL for node "model.my_star_schema_project.dim_dates"
+[0m18:06:15.923463 [debug] [Thread-1 (]: Began executing node model.my_star_schema_project.dim_dates
+[0m18:06:15.923781 [debug] [Thread-1 (]: Finished running node model.my_star_schema_project.dim_dates
+[0m18:06:15.923968 [debug] [Thread-1 (]: Began running node model.my_star_schema_project.dim_products
+[0m18:06:15.924175 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.my_star_schema_project.dim_dates, now model.my_star_schema_project.dim_products)
+[0m18:06:15.924356 [debug] [Thread-1 (]: Began compiling node model.my_star_schema_project.dim_products
+[0m18:06:15.926065 [debug] [Thread-1 (]: Writing injected SQL for node "model.my_star_schema_project.dim_products"
+[0m18:06:15.926368 [debug] [Thread-1 (]: Began executing node model.my_star_schema_project.dim_products
+[0m18:06:15.926679 [debug] [Thread-1 (]: Finished running node model.my_star_schema_project.dim_products
+[0m18:06:15.926865 [debug] [Thread-1 (]: Began running node model.my_star_schema_project.fact_sales
+[0m18:06:15.927136 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.my_star_schema_project.dim_products, now model.my_star_schema_project.fact_sales)
+[0m18:06:15.927318 [debug] [Thread-1 (]: Began compiling node model.my_star_schema_project.fact_sales
+[0m18:06:15.929470 [debug] [Thread-1 (]: Writing injected SQL for node "model.my_star_schema_project.fact_sales"
+[0m18:06:15.929832 [debug] [Thread-1 (]: Began executing node model.my_star_schema_project.fact_sales
+[0m18:06:15.930177 [debug] [Thread-1 (]: Finished running node model.my_star_schema_project.fact_sales
+[0m18:06:15.930391 [debug] [Thread-1 (]: Began running node test.my_star_schema_project.not_null_dim_customers_customer_city.f59e32635d
+[0m18:06:15.930664 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.my_star_schema_project.fact_sales, now test.my_star_schema_project.not_null_dim_customers_customer_city.f59e32635d)
+[0m18:06:15.930858 [debug] [Thread-1 (]: Began compiling node test.my_star_schema_project.not_null_dim_customers_customer_city.f59e32635d
+[0m18:06:15.937320 [debug] [Thread-1 (]: Writing injected SQL for node "test.my_star_schema_project.not_null_dim_customers_customer_city.f59e32635d"
+[0m18:06:15.938002 [debug] [Thread-1 (]: Began executing node test.my_star_schema_project.not_null_dim_customers_customer_city.f59e32635d
+[0m18:06:15.938369 [debug] [Thread-1 (]: Finished running node test.my_star_schema_project.not_null_dim_customers_customer_city.f59e32635d
+[0m18:06:15.938575 [debug] [Thread-1 (]: Began running node test.my_star_schema_project.not_null_dim_customers_customer_id.dd91cd1c8d
+[0m18:06:15.938815 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.my_star_schema_project.not_null_dim_customers_customer_city.f59e32635d, now test.my_star_schema_project.not_null_dim_customers_customer_id.dd91cd1c8d)
+[0m18:06:15.939006 [debug] [Thread-1 (]: Began compiling node test.my_star_schema_project.not_null_dim_customers_customer_id.dd91cd1c8d
+[0m18:06:15.941165 [debug] [Thread-1 (]: Writing injected SQL for node "test.my_star_schema_project.not_null_dim_customers_customer_id.dd91cd1c8d"
+[0m18:06:15.941677 [debug] [Thread-1 (]: Began executing node test.my_star_schema_project.not_null_dim_customers_customer_id.dd91cd1c8d
+[0m18:06:15.942094 [debug] [Thread-1 (]: Finished running node test.my_star_schema_project.not_null_dim_customers_customer_id.dd91cd1c8d
+[0m18:06:15.942309 [debug] [Thread-1 (]: Began running node test.my_star_schema_project.not_null_dim_customers_customer_name.c8ab2d704d
+[0m18:06:15.942570 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.my_star_schema_project.not_null_dim_customers_customer_id.dd91cd1c8d, now test.my_star_schema_project.not_null_dim_customers_customer_name.c8ab2d704d)
+[0m18:06:15.942804 [debug] [Thread-1 (]: Began compiling node test.my_star_schema_project.not_null_dim_customers_customer_name.c8ab2d704d
+[0m18:06:15.944877 [debug] [Thread-1 (]: Writing injected SQL for node "test.my_star_schema_project.not_null_dim_customers_customer_name.c8ab2d704d"
+[0m18:06:15.945425 [debug] [Thread-1 (]: Began executing node test.my_star_schema_project.not_null_dim_customers_customer_name.c8ab2d704d
+[0m18:06:15.945757 [debug] [Thread-1 (]: Finished running node test.my_star_schema_project.not_null_dim_customers_customer_name.c8ab2d704d
+[0m18:06:15.945955 [debug] [Thread-1 (]: Began running node test.my_star_schema_project.not_null_dim_customers_customer_state.7c7083b6aa
+[0m18:06:15.946176 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.my_star_schema_project.not_null_dim_customers_customer_name.c8ab2d704d, now test.my_star_schema_project.not_null_dim_customers_customer_state.7c7083b6aa)
+[0m18:06:15.946434 [debug] [Thread-1 (]: Began compiling node test.my_star_schema_project.not_null_dim_customers_customer_state.7c7083b6aa
+[0m18:06:15.948445 [debug] [Thread-1 (]: Writing injected SQL for node "test.my_star_schema_project.not_null_dim_customers_customer_state.7c7083b6aa"
+[0m18:06:15.948762 [debug] [Thread-1 (]: Began executing node test.my_star_schema_project.not_null_dim_customers_customer_state.7c7083b6aa
+[0m18:06:15.949108 [debug] [Thread-1 (]: Finished running node test.my_star_schema_project.not_null_dim_customers_customer_state.7c7083b6aa
+[0m18:06:15.949333 [debug] [Thread-1 (]: Began running node test.my_star_schema_project.unique_dim_customers_customer_id.15c9f1e2fd
+[0m18:06:15.949632 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.my_star_schema_project.not_null_dim_customers_customer_state.7c7083b6aa, now test.my_star_schema_project.unique_dim_customers_customer_id.15c9f1e2fd)
+[0m18:06:15.949850 [debug] [Thread-1 (]: Began compiling node test.my_star_schema_project.unique_dim_customers_customer_id.15c9f1e2fd
+[0m18:06:15.953950 [debug] [Thread-1 (]: Writing injected SQL for node "test.my_star_schema_project.unique_dim_customers_customer_id.15c9f1e2fd"
+[0m18:06:15.954574 [debug] [Thread-1 (]: Began executing node test.my_star_schema_project.unique_dim_customers_customer_id.15c9f1e2fd
+[0m18:06:15.954946 [debug] [Thread-1 (]: Finished running node test.my_star_schema_project.unique_dim_customers_customer_id.15c9f1e2fd
+[0m18:06:15.955159 [debug] [Thread-1 (]: Began running node test.my_star_schema_project.not_null_dim_products_price.93519fc0ed
+[0m18:06:15.955393 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.my_star_schema_project.unique_dim_customers_customer_id.15c9f1e2fd, now test.my_star_schema_project.not_null_dim_products_price.93519fc0ed)
+[0m18:06:15.955589 [debug] [Thread-1 (]: Began compiling node test.my_star_schema_project.not_null_dim_products_price.93519fc0ed
+[0m18:06:15.958485 [debug] [Thread-1 (]: Writing injected SQL for node "test.my_star_schema_project.not_null_dim_products_price.93519fc0ed"
+[0m18:06:15.958827 [debug] [Thread-1 (]: Began executing node test.my_star_schema_project.not_null_dim_products_price.93519fc0ed
+[0m18:06:15.959153 [debug] [Thread-1 (]: Finished running node test.my_star_schema_project.not_null_dim_products_price.93519fc0ed
+[0m18:06:15.959349 [debug] [Thread-1 (]: Began running node test.my_star_schema_project.not_null_dim_products_product_category.069796c541
+[0m18:06:15.959563 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.my_star_schema_project.not_null_dim_products_price.93519fc0ed, now test.my_star_schema_project.not_null_dim_products_product_category.069796c541)
+[0m18:06:15.959748 [debug] [Thread-1 (]: Began compiling node test.my_star_schema_project.not_null_dim_products_product_category.069796c541
+[0m18:06:15.992573 [debug] [Thread-1 (]: Writing injected SQL for node "test.my_star_schema_project.not_null_dim_products_product_category.069796c541"
+[0m18:06:15.993071 [debug] [Thread-1 (]: Began executing node test.my_star_schema_project.not_null_dim_products_product_category.069796c541
+[0m18:06:15.993439 [debug] [Thread-1 (]: Finished running node test.my_star_schema_project.not_null_dim_products_product_category.069796c541
+[0m18:06:15.993656 [debug] [Thread-1 (]: Began running node test.my_star_schema_project.not_null_dim_products_product_id.c8aba288d1
+[0m18:06:15.993861 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.my_star_schema_project.not_null_dim_products_product_category.069796c541, now test.my_star_schema_project.not_null_dim_products_product_id.c8aba288d1)
+[0m18:06:15.994119 [debug] [Thread-1 (]: Began compiling node test.my_star_schema_project.not_null_dim_products_product_id.c8aba288d1
+[0m18:06:15.996214 [debug] [Thread-1 (]: Writing injected SQL for node "test.my_star_schema_project.not_null_dim_products_product_id.c8aba288d1"
+[0m18:06:15.996684 [debug] [Thread-1 (]: Began executing node test.my_star_schema_project.not_null_dim_products_product_id.c8aba288d1
+[0m18:06:15.997013 [debug] [Thread-1 (]: Finished running node test.my_star_schema_project.not_null_dim_products_product_id.c8aba288d1
+[0m18:06:15.997209 [debug] [Thread-1 (]: Began running node test.my_star_schema_project.not_null_dim_products_product_name.991aec73f3
+[0m18:06:15.997426 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.my_star_schema_project.not_null_dim_products_product_id.c8aba288d1, now test.my_star_schema_project.not_null_dim_products_product_name.991aec73f3)
+[0m18:06:15.997610 [debug] [Thread-1 (]: Began compiling node test.my_star_schema_project.not_null_dim_products_product_name.991aec73f3
+[0m18:06:15.999638 [debug] [Thread-1 (]: Writing injected SQL for node "test.my_star_schema_project.not_null_dim_products_product_name.991aec73f3"
+[0m18:06:15.999944 [debug] [Thread-1 (]: Began executing node test.my_star_schema_project.not_null_dim_products_product_name.991aec73f3
+[0m18:06:16.000265 [debug] [Thread-1 (]: Finished running node test.my_star_schema_project.not_null_dim_products_product_name.991aec73f3
+[0m18:06:16.000465 [debug] [Thread-1 (]: Began running node test.my_star_schema_project.unique_dim_products_product_id.ef7b2a9985
+[0m18:06:16.000676 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.my_star_schema_project.not_null_dim_products_product_name.991aec73f3, now test.my_star_schema_project.unique_dim_products_product_id.ef7b2a9985)
+[0m18:06:16.000863 [debug] [Thread-1 (]: Began compiling node test.my_star_schema_project.unique_dim_products_product_id.ef7b2a9985
+[0m18:06:16.003045 [debug] [Thread-1 (]: Writing injected SQL for node "test.my_star_schema_project.unique_dim_products_product_id.ef7b2a9985"
+[0m18:06:16.003455 [debug] [Thread-1 (]: Began executing node test.my_star_schema_project.unique_dim_products_product_id.ef7b2a9985
+[0m18:06:16.003816 [debug] [Thread-1 (]: Finished running node test.my_star_schema_project.unique_dim_products_product_id.ef7b2a9985
+[0m18:06:16.004031 [debug] [Thread-1 (]: Began running node model.my_star_schema_project.star_schema_view
+[0m18:06:16.004274 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.my_star_schema_project.unique_dim_products_product_id.ef7b2a9985, now model.my_star_schema_project.star_schema_view)
+[0m18:06:16.004489 [debug] [Thread-1 (]: Began compiling node model.my_star_schema_project.star_schema_view
+[0m18:06:16.006350 [debug] [Thread-1 (]: Writing injected SQL for node "model.my_star_schema_project.star_schema_view"
+[0m18:06:16.006799 [debug] [Thread-1 (]: Began executing node model.my_star_schema_project.star_schema_view
+[0m18:06:16.007130 [debug] [Thread-1 (]: Finished running node model.my_star_schema_project.star_schema_view
+[0m18:06:16.007568 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m18:06:16.007735 [debug] [MainThread]: Connection 'model.my_star_schema_project.star_schema_view' was properly closed.
+[0m18:06:16.009019 [debug] [MainThread]: Command end result
+[0m18:06:16.023103 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/takeshiiijima/github/duckdb-dbt/target/manifest.json
+[0m18:06:16.024071 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/takeshiiijima/github/duckdb-dbt/target/semantic_manifest.json
+[0m18:06:16.028718 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/takeshiiijima/github/duckdb-dbt/target/run_results.json
+[0m18:06:16.029996 [debug] [MainThread]: Resource report: {"command_name": "compile", "command_success": true, "command_wall_clock_time": 0.7150365, "process_in_blocks": "0", "process_kernel_time": 0.169775, "process_mem_max_rss": "130613248", "process_out_blocks": "0", "process_user_time": 1.135053}
+[0m18:06:16.030288 [debug] [MainThread]: Command `dbt compile` succeeded at 18:06:16.030237 after 0.72 seconds
+[0m18:06:16.030528 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1046c5240>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104787f40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1075bf5e0>]}
+[0m18:06:16.030754 [debug] [MainThread]: Flushing usage events
+[0m18:06:16.789869 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:08:28.852791 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1036992d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1044f4d90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1044f54e0>]}
+
+
+============================== 18:08:28.855756 | 338602c9-746d-4ef6-8b71-de36fb1f98cc ==============================
+[0m18:08:28.855756 [info ] [MainThread]: Running with dbt=1.9.2
+[0m18:08:28.856107 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': '/Users/takeshiiijima/github/duckdb-dbt/logs', 'version_check': 'True', 'profiles_dir': '/Users/takeshiiijima/github/duckdb-dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m18:08:29.011294 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '338602c9-746d-4ef6-8b71-de36fb1f98cc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10462e3b0>]}
+[0m18:08:29.042677 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '338602c9-746d-4ef6-8b71-de36fb1f98cc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10402c280>]}
+[0m18:08:29.045452 [info ] [MainThread]: Registered adapter: duckdb=1.9.1
+[0m18:08:29.099539 [debug] [MainThread]: checksum: 12b12750b70de726cfd89136b8e24afc3f3e77597a97bff40ab7e5f9b39d5e18, vars: {}, profile: , target: , version: 1.9.2
+[0m18:08:29.184823 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m18:08:29.185111 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m18:08:29.216550 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '338602c9-746d-4ef6-8b71-de36fb1f98cc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104a84070>]}
+[0m18:08:29.266549 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/takeshiiijima/github/duckdb-dbt/target/manifest.json
+[0m18:08:29.267879 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/takeshiiijima/github/duckdb-dbt/target/semantic_manifest.json
+[0m18:08:29.279788 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '338602c9-746d-4ef6-8b71-de36fb1f98cc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104a59de0>]}
+[0m18:08:29.280131 [info ] [MainThread]: Found 5 models, 4 seeds, 10 data tests, 426 macros
+[0m18:08:29.280332 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '338602c9-746d-4ef6-8b71-de36fb1f98cc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104a5bd60>]}
+[0m18:08:29.281284 [info ] [MainThread]: 
+[0m18:08:29.281487 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m18:08:29.281653 [info ] [MainThread]: 
+[0m18:08:29.281929 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m18:08:29.284643 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_duckdb'
+[0m18:08:29.315981 [debug] [ThreadPool]: Using duckdb connection "list_duckdb"
+[0m18:08:29.316251 [debug] [ThreadPool]: On list_duckdb: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "my_star_schema_profile", "target_name": "dev", "connection_name": "list_duckdb"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"duckdb"'
+    
+  
+  
+[0m18:08:29.316423 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m18:08:29.362309 [debug] [ThreadPool]: SQL status: OK in 0.046 seconds
+[0m18:08:29.363346 [debug] [ThreadPool]: On list_duckdb: Close
+[0m18:08:29.364984 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_duckdb, now create_duckdb_main)
+[0m18:08:29.365266 [debug] [ThreadPool]: Creating schema "database: "duckdb"
+schema: "main"
+"
+[0m18:08:29.369002 [debug] [ThreadPool]: Using duckdb connection "create_duckdb_main"
+[0m18:08:29.369238 [debug] [ThreadPool]: On create_duckdb_main: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "my_star_schema_profile", "target_name": "dev", "connection_name": "create_duckdb_main"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='duckdb'
+        and type='sqlite'
+    
+  
+[0m18:08:29.369410 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m18:08:29.374826 [debug] [ThreadPool]: SQL status: OK in 0.005 seconds
+[0m18:08:29.375557 [debug] [ThreadPool]: Using duckdb connection "create_duckdb_main"
+[0m18:08:29.375734 [debug] [ThreadPool]: On create_duckdb_main: BEGIN
+[0m18:08:29.375953 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m18:08:29.376118 [debug] [ThreadPool]: Using duckdb connection "create_duckdb_main"
+[0m18:08:29.376276 [debug] [ThreadPool]: On create_duckdb_main: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "my_star_schema_profile", "target_name": "dev", "connection_name": "create_duckdb_main"} */
+
+    
+    
+        create schema if not exists "duckdb"."main"
+    
+[0m18:08:29.376914 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m18:08:29.377413 [debug] [ThreadPool]: On create_duckdb_main: COMMIT
+[0m18:08:29.377596 [debug] [ThreadPool]: Using duckdb connection "create_duckdb_main"
+[0m18:08:29.377752 [debug] [ThreadPool]: On create_duckdb_main: COMMIT
+[0m18:08:29.377974 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m18:08:29.378146 [debug] [ThreadPool]: On create_duckdb_main: Close
+[0m18:08:29.379888 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_duckdb_main, now list_duckdb_main)
+[0m18:08:29.382985 [debug] [ThreadPool]: Using duckdb connection "list_duckdb_main"
+[0m18:08:29.383172 [debug] [ThreadPool]: On list_duckdb_main: BEGIN
+[0m18:08:29.383324 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m18:08:29.388637 [debug] [ThreadPool]: SQL status: OK in 0.005 seconds
+[0m18:08:29.388882 [debug] [ThreadPool]: Using duckdb connection "list_duckdb_main"
+[0m18:08:29.389063 [debug] [ThreadPool]: On list_duckdb_main: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "my_star_schema_profile", "target_name": "dev", "connection_name": "list_duckdb_main"} */
+select
+      'duckdb' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main'
+    and lower(table_catalog) = 'duckdb'
+  
+[0m18:08:29.403032 [debug] [ThreadPool]: SQL status: OK in 0.014 seconds
+[0m18:08:29.404260 [debug] [ThreadPool]: On list_duckdb_main: ROLLBACK
+[0m18:08:29.405092 [debug] [ThreadPool]: Failed to rollback 'list_duckdb_main'
+[0m18:08:29.405348 [debug] [ThreadPool]: On list_duckdb_main: Close
+[0m18:08:29.412854 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '338602c9-746d-4ef6-8b71-de36fb1f98cc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x102612860>]}
+[0m18:08:29.415195 [debug] [MainThread]: Using duckdb connection "master"
+[0m18:08:29.415956 [debug] [MainThread]: On master: BEGIN
+[0m18:08:29.416190 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m18:08:29.424807 [debug] [MainThread]: SQL status: OK in 0.008 seconds
+[0m18:08:29.425223 [debug] [MainThread]: On master: COMMIT
+[0m18:08:29.425438 [debug] [MainThread]: Using duckdb connection "master"
+[0m18:08:29.425618 [debug] [MainThread]: On master: COMMIT
+[0m18:08:29.425875 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m18:08:29.426067 [debug] [MainThread]: On master: Close
+[0m18:08:29.429357 [debug] [Thread-1 (]: Began running node model.my_star_schema_project.dim_customers
+[0m18:08:29.429824 [info ] [Thread-1 (]: 1 of 5 START sql view model main.dim_customers ................................. [RUN]
+[0m18:08:29.430433 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_duckdb_main, now model.my_star_schema_project.dim_customers)
+[0m18:08:29.430934 [debug] [Thread-1 (]: Began compiling node model.my_star_schema_project.dim_customers
+[0m18:08:29.439876 [debug] [Thread-1 (]: Writing injected SQL for node "model.my_star_schema_project.dim_customers"
+[0m18:08:29.441249 [debug] [Thread-1 (]: Began executing node model.my_star_schema_project.dim_customers
+[0m18:08:29.472788 [debug] [Thread-1 (]: Writing runtime sql for node "model.my_star_schema_project.dim_customers"
+[0m18:08:29.473495 [debug] [Thread-1 (]: Using duckdb connection "model.my_star_schema_project.dim_customers"
+[0m18:08:29.473757 [debug] [Thread-1 (]: On model.my_star_schema_project.dim_customers: BEGIN
+[0m18:08:29.473969 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m18:08:29.480587 [debug] [Thread-1 (]: SQL status: OK in 0.007 seconds
+[0m18:08:29.480955 [debug] [Thread-1 (]: Using duckdb connection "model.my_star_schema_project.dim_customers"
+[0m18:08:29.481181 [debug] [Thread-1 (]: On model.my_star_schema_project.dim_customers: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "my_star_schema_profile", "target_name": "dev", "node_id": "model.my_star_schema_project.dim_customers"} */
+
+  
+  create view "duckdb"."main"."dim_customers__dbt_tmp" as (
+    -- models/dim_customers.sql
+select 
+    customer_id,
+    customer_name,
+    customer_city,
+    customer_state
+from "duckdb"."main"."customers"
+  );
+
+[0m18:08:29.481646 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m18:08:29.486792 [debug] [Thread-1 (]: Using duckdb connection "model.my_star_schema_project.dim_customers"
+[0m18:08:29.487159 [debug] [Thread-1 (]: On model.my_star_schema_project.dim_customers: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "my_star_schema_profile", "target_name": "dev", "node_id": "model.my_star_schema_project.dim_customers"} */
+alter view "duckdb"."main"."dim_customers" rename to "dim_customers__dbt_backup"
+[0m18:08:29.488070 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m18:08:29.490390 [debug] [Thread-1 (]: Using duckdb connection "model.my_star_schema_project.dim_customers"
+[0m18:08:29.490703 [debug] [Thread-1 (]: On model.my_star_schema_project.dim_customers: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "my_star_schema_profile", "target_name": "dev", "node_id": "model.my_star_schema_project.dim_customers"} */
+alter view "duckdb"."main"."dim_customers__dbt_tmp" rename to "dim_customers"
+[0m18:08:29.491170 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m18:08:29.499723 [debug] [Thread-1 (]: On model.my_star_schema_project.dim_customers: COMMIT
+[0m18:08:29.500188 [debug] [Thread-1 (]: Using duckdb connection "model.my_star_schema_project.dim_customers"
+[0m18:08:29.500441 [debug] [Thread-1 (]: On model.my_star_schema_project.dim_customers: COMMIT
+[0m18:08:29.501914 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m18:08:29.506489 [debug] [Thread-1 (]: Using duckdb connection "model.my_star_schema_project.dim_customers"
+[0m18:08:29.506871 [debug] [Thread-1 (]: On model.my_star_schema_project.dim_customers: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "my_star_schema_profile", "target_name": "dev", "node_id": "model.my_star_schema_project.dim_customers"} */
+drop view if exists "duckdb"."main"."dim_customers__dbt_backup" cascade
+[0m18:08:29.507686 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m18:08:29.509879 [debug] [Thread-1 (]: On model.my_star_schema_project.dim_customers: Close
+[0m18:08:29.516893 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '338602c9-746d-4ef6-8b71-de36fb1f98cc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x102747f10>]}
+[0m18:08:29.517464 [info ] [Thread-1 (]: 1 of 5 OK created sql view model main.dim_customers ............................ [[32mOK[0m in 0.09s]
+[0m18:08:29.517874 [debug] [Thread-1 (]: Finished running node model.my_star_schema_project.dim_customers
+[0m18:08:29.518197 [debug] [Thread-1 (]: Began running node model.my_star_schema_project.dim_dates
+[0m18:08:29.518666 [info ] [Thread-1 (]: 2 of 5 START sql view model main.dim_dates ..................................... [RUN]
+[0m18:08:29.519074 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.my_star_schema_project.dim_customers, now model.my_star_schema_project.dim_dates)
+[0m18:08:29.519309 [debug] [Thread-1 (]: Began compiling node model.my_star_schema_project.dim_dates
+[0m18:08:29.521352 [debug] [Thread-1 (]: Writing injected SQL for node "model.my_star_schema_project.dim_dates"
+[0m18:08:29.522095 [debug] [Thread-1 (]: Began executing node model.my_star_schema_project.dim_dates
+[0m18:08:29.525153 [debug] [Thread-1 (]: Writing runtime sql for node "model.my_star_schema_project.dim_dates"
+[0m18:08:29.527045 [debug] [Thread-1 (]: Using duckdb connection "model.my_star_schema_project.dim_dates"
+[0m18:08:29.527355 [debug] [Thread-1 (]: On model.my_star_schema_project.dim_dates: BEGIN
+[0m18:08:29.527561 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m18:08:29.537392 [debug] [Thread-1 (]: SQL status: OK in 0.010 seconds
+[0m18:08:29.538196 [debug] [Thread-1 (]: Using duckdb connection "model.my_star_schema_project.dim_dates"
+[0m18:08:29.538775 [debug] [Thread-1 (]: On model.my_star_schema_project.dim_dates: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "my_star_schema_profile", "target_name": "dev", "node_id": "model.my_star_schema_project.dim_dates"} */
+
+  
+  create view "duckdb"."main"."dim_dates__dbt_tmp" as (
+    -- models/dim_dates.sql
+select 
+    date_key,
+    date,
+    year,
+    month,
+    day
+from "duckdb"."main"."dates"
+  );
+
+[0m18:08:29.539744 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m18:08:29.543057 [debug] [Thread-1 (]: Using duckdb connection "model.my_star_schema_project.dim_dates"
+[0m18:08:29.543347 [debug] [Thread-1 (]: On model.my_star_schema_project.dim_dates: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "my_star_schema_profile", "target_name": "dev", "node_id": "model.my_star_schema_project.dim_dates"} */
+alter view "duckdb"."main"."dim_dates" rename to "dim_dates__dbt_backup"
+[0m18:08:29.543773 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m18:08:29.545613 [debug] [Thread-1 (]: Using duckdb connection "model.my_star_schema_project.dim_dates"
+[0m18:08:29.545964 [debug] [Thread-1 (]: On model.my_star_schema_project.dim_dates: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "my_star_schema_profile", "target_name": "dev", "node_id": "model.my_star_schema_project.dim_dates"} */
+alter view "duckdb"."main"."dim_dates__dbt_tmp" rename to "dim_dates"
+[0m18:08:29.546358 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m18:08:29.547308 [debug] [Thread-1 (]: On model.my_star_schema_project.dim_dates: COMMIT
+[0m18:08:29.547557 [debug] [Thread-1 (]: Using duckdb connection "model.my_star_schema_project.dim_dates"
+[0m18:08:29.547750 [debug] [Thread-1 (]: On model.my_star_schema_project.dim_dates: COMMIT
+[0m18:08:29.548382 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m18:08:29.550993 [debug] [Thread-1 (]: Using duckdb connection "model.my_star_schema_project.dim_dates"
+[0m18:08:29.551370 [debug] [Thread-1 (]: On model.my_star_schema_project.dim_dates: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "my_star_schema_profile", "target_name": "dev", "node_id": "model.my_star_schema_project.dim_dates"} */
+drop view if exists "duckdb"."main"."dim_dates__dbt_backup" cascade
+[0m18:08:29.551897 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m18:08:29.552669 [debug] [Thread-1 (]: On model.my_star_schema_project.dim_dates: Close
+[0m18:08:29.554654 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '338602c9-746d-4ef6-8b71-de36fb1f98cc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105063550>]}
+[0m18:08:29.555020 [info ] [Thread-1 (]: 2 of 5 OK created sql view model main.dim_dates ................................ [[32mOK[0m in 0.04s]
+[0m18:08:29.555321 [debug] [Thread-1 (]: Finished running node model.my_star_schema_project.dim_dates
+[0m18:08:29.555533 [debug] [Thread-1 (]: Began running node model.my_star_schema_project.dim_products
+[0m18:08:29.555802 [info ] [Thread-1 (]: 3 of 5 START sql view model main.dim_products .................................. [RUN]
+[0m18:08:29.556041 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.my_star_schema_project.dim_dates, now model.my_star_schema_project.dim_products)
+[0m18:08:29.556240 [debug] [Thread-1 (]: Began compiling node model.my_star_schema_project.dim_products
+[0m18:08:29.590631 [debug] [Thread-1 (]: Writing injected SQL for node "model.my_star_schema_project.dim_products"
+[0m18:08:29.591167 [debug] [Thread-1 (]: Began executing node model.my_star_schema_project.dim_products
+[0m18:08:29.593159 [debug] [Thread-1 (]: Writing runtime sql for node "model.my_star_schema_project.dim_products"
+[0m18:08:29.593500 [debug] [Thread-1 (]: Using duckdb connection "model.my_star_schema_project.dim_products"
+[0m18:08:29.593690 [debug] [Thread-1 (]: On model.my_star_schema_project.dim_products: BEGIN
+[0m18:08:29.593862 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m18:08:29.599559 [debug] [Thread-1 (]: SQL status: OK in 0.006 seconds
+[0m18:08:29.599886 [debug] [Thread-1 (]: Using duckdb connection "model.my_star_schema_project.dim_products"
+[0m18:08:29.600102 [debug] [Thread-1 (]: On model.my_star_schema_project.dim_products: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "my_star_schema_profile", "target_name": "dev", "node_id": "model.my_star_schema_project.dim_products"} */
+
+  
+  create view "duckdb"."main"."dim_products__dbt_tmp" as (
+    -- models/dim_products.sql
+
+with avg_calc as (
+  -- products テーブルから price の平均値（NULL は除外）を計算
+  select
+    avg(price) as avg_price
+  from "duckdb"."main"."products"
+  where price is not null
+)
+select
+  p.product_id,
+  p.product_name,
+  p.product_category,
+  -- 欠損している場合は avg_price を利用
+  coalesce(p.price, a.avg_price) as price
+from "duckdb"."main"."products" as p
+cross join avg_calc as a
+  );
+
+[0m18:08:29.600810 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m18:08:29.603061 [debug] [Thread-1 (]: Using duckdb connection "model.my_star_schema_project.dim_products"
+[0m18:08:29.603371 [debug] [Thread-1 (]: On model.my_star_schema_project.dim_products: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "my_star_schema_profile", "target_name": "dev", "node_id": "model.my_star_schema_project.dim_products"} */
+alter view "duckdb"."main"."dim_products" rename to "dim_products__dbt_backup"
+[0m18:08:29.603903 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m18:08:29.605945 [debug] [Thread-1 (]: Using duckdb connection "model.my_star_schema_project.dim_products"
+[0m18:08:29.606181 [debug] [Thread-1 (]: On model.my_star_schema_project.dim_products: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "my_star_schema_profile", "target_name": "dev", "node_id": "model.my_star_schema_project.dim_products"} */
+alter view "duckdb"."main"."dim_products__dbt_tmp" rename to "dim_products"
+[0m18:08:29.606555 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m18:08:29.607525 [debug] [Thread-1 (]: On model.my_star_schema_project.dim_products: COMMIT
+[0m18:08:29.607722 [debug] [Thread-1 (]: Using duckdb connection "model.my_star_schema_project.dim_products"
+[0m18:08:29.607897 [debug] [Thread-1 (]: On model.my_star_schema_project.dim_products: COMMIT
+[0m18:08:29.608442 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m18:08:29.609992 [debug] [Thread-1 (]: Using duckdb connection "model.my_star_schema_project.dim_products"
+[0m18:08:29.610237 [debug] [Thread-1 (]: On model.my_star_schema_project.dim_products: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "my_star_schema_profile", "target_name": "dev", "node_id": "model.my_star_schema_project.dim_products"} */
+drop view if exists "duckdb"."main"."dim_products__dbt_backup" cascade
+[0m18:08:29.610699 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m18:08:29.611436 [debug] [Thread-1 (]: On model.my_star_schema_project.dim_products: Close
+[0m18:08:29.614036 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '338602c9-746d-4ef6-8b71-de36fb1f98cc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105063550>]}
+[0m18:08:29.614563 [info ] [Thread-1 (]: 3 of 5 OK created sql view model main.dim_products ............................. [[32mOK[0m in 0.06s]
+[0m18:08:29.614894 [debug] [Thread-1 (]: Finished running node model.my_star_schema_project.dim_products
+[0m18:08:29.615117 [debug] [Thread-1 (]: Began running node model.my_star_schema_project.fact_sales
+[0m18:08:29.615403 [info ] [Thread-1 (]: 4 of 5 START sql view model main.fact_sales .................................... [RUN]
+[0m18:08:29.615671 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.my_star_schema_project.dim_products, now model.my_star_schema_project.fact_sales)
+[0m18:08:29.615874 [debug] [Thread-1 (]: Began compiling node model.my_star_schema_project.fact_sales
+[0m18:08:29.617602 [debug] [Thread-1 (]: Writing injected SQL for node "model.my_star_schema_project.fact_sales"
+[0m18:08:29.618202 [debug] [Thread-1 (]: Began executing node model.my_star_schema_project.fact_sales
+[0m18:08:29.621502 [debug] [Thread-1 (]: Writing runtime sql for node "model.my_star_schema_project.fact_sales"
+[0m18:08:29.622054 [debug] [Thread-1 (]: Using duckdb connection "model.my_star_schema_project.fact_sales"
+[0m18:08:29.622285 [debug] [Thread-1 (]: On model.my_star_schema_project.fact_sales: BEGIN
+[0m18:08:29.622476 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m18:08:29.628579 [debug] [Thread-1 (]: SQL status: OK in 0.006 seconds
+[0m18:08:29.628891 [debug] [Thread-1 (]: Using duckdb connection "model.my_star_schema_project.fact_sales"
+[0m18:08:29.629100 [debug] [Thread-1 (]: On model.my_star_schema_project.fact_sales: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "my_star_schema_profile", "target_name": "dev", "node_id": "model.my_star_schema_project.fact_sales"} */
+
+  
+  create view "duckdb"."main"."fact_sales__dbt_tmp" as (
+    -- models/fact_sales.sql
+select 
+    sale_id,
+    customer_id,
+    product_id,
+    date_key,
+    quantity,
+    total_amount
+from "duckdb"."main"."sales"
+  );
+
+[0m18:08:29.629510 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m18:08:29.632013 [debug] [Thread-1 (]: Using duckdb connection "model.my_star_schema_project.fact_sales"
+[0m18:08:29.632382 [debug] [Thread-1 (]: On model.my_star_schema_project.fact_sales: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "my_star_schema_profile", "target_name": "dev", "node_id": "model.my_star_schema_project.fact_sales"} */
+alter view "duckdb"."main"."fact_sales" rename to "fact_sales__dbt_backup"
+[0m18:08:29.632854 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m18:08:29.634880 [debug] [Thread-1 (]: Using duckdb connection "model.my_star_schema_project.fact_sales"
+[0m18:08:29.635197 [debug] [Thread-1 (]: On model.my_star_schema_project.fact_sales: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "my_star_schema_profile", "target_name": "dev", "node_id": "model.my_star_schema_project.fact_sales"} */
+alter view "duckdb"."main"."fact_sales__dbt_tmp" rename to "fact_sales"
+[0m18:08:29.635827 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m18:08:29.636905 [debug] [Thread-1 (]: On model.my_star_schema_project.fact_sales: COMMIT
+[0m18:08:29.637141 [debug] [Thread-1 (]: Using duckdb connection "model.my_star_schema_project.fact_sales"
+[0m18:08:29.637327 [debug] [Thread-1 (]: On model.my_star_schema_project.fact_sales: COMMIT
+[0m18:08:29.637847 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m18:08:29.639242 [debug] [Thread-1 (]: Using duckdb connection "model.my_star_schema_project.fact_sales"
+[0m18:08:29.639438 [debug] [Thread-1 (]: On model.my_star_schema_project.fact_sales: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "my_star_schema_profile", "target_name": "dev", "node_id": "model.my_star_schema_project.fact_sales"} */
+drop view if exists "duckdb"."main"."fact_sales__dbt_backup" cascade
+[0m18:08:29.639801 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m18:08:29.640508 [debug] [Thread-1 (]: On model.my_star_schema_project.fact_sales: Close
+[0m18:08:29.642485 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '338602c9-746d-4ef6-8b71-de36fb1f98cc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105063550>]}
+[0m18:08:29.642844 [info ] [Thread-1 (]: 4 of 5 OK created sql view model main.fact_sales ............................... [[32mOK[0m in 0.03s]
+[0m18:08:29.643151 [debug] [Thread-1 (]: Finished running node model.my_star_schema_project.fact_sales
+[0m18:08:29.643533 [debug] [Thread-1 (]: Began running node model.my_star_schema_project.star_schema_view
+[0m18:08:29.643835 [info ] [Thread-1 (]: 5 of 5 START sql view model main.star_schema_view .............................. [RUN]
+[0m18:08:29.644116 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.my_star_schema_project.fact_sales, now model.my_star_schema_project.star_schema_view)
+[0m18:08:29.644314 [debug] [Thread-1 (]: Began compiling node model.my_star_schema_project.star_schema_view
+[0m18:08:29.646524 [debug] [Thread-1 (]: Writing injected SQL for node "model.my_star_schema_project.star_schema_view"
+[0m18:08:29.647012 [debug] [Thread-1 (]: Began executing node model.my_star_schema_project.star_schema_view
+[0m18:08:29.649527 [debug] [Thread-1 (]: Writing runtime sql for node "model.my_star_schema_project.star_schema_view"
+[0m18:08:29.650011 [debug] [Thread-1 (]: Using duckdb connection "model.my_star_schema_project.star_schema_view"
+[0m18:08:29.650206 [debug] [Thread-1 (]: On model.my_star_schema_project.star_schema_view: BEGIN
+[0m18:08:29.650378 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m18:08:29.657141 [debug] [Thread-1 (]: SQL status: OK in 0.007 seconds
+[0m18:08:29.657449 [debug] [Thread-1 (]: Using duckdb connection "model.my_star_schema_project.star_schema_view"
+[0m18:08:29.657675 [debug] [Thread-1 (]: On model.my_star_schema_project.star_schema_view: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "my_star_schema_profile", "target_name": "dev", "node_id": "model.my_star_schema_project.star_schema_view"} */
+
+  
+  create view "duckdb"."main"."star_schema_view__dbt_tmp" as (
+    -- models/star_schema_view.sql
+with fact as (
+    select * from "duckdb"."main"."fact_sales"
+),
+customers as (
+    select * from "duckdb"."main"."dim_customers"
+),
+products as (
+    select * from "duckdb"."main"."dim_products"
+),
+dates as (
+    select * from "duckdb"."main"."dim_dates"
+)
+select
+    f.sale_id,
+    f.quantity,
+    f.total_amount,
+    c.customer_id,
+    c.customer_name,
+    c.customer_city,
+    c.customer_state,
+    p.product_id,
+    p.product_name,
+    p.product_category,
+    p.price,
+    d.date_key,
+    d.date,
+    d.year,
+    d.month,
+    d.day
+from fact f
+left join customers c on f.customer_id = c.customer_id
+left join products p on f.product_id = p.product_id
+left join dates d on f.date_key = d.date_key
+  );
+
+[0m18:08:29.658433 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m18:08:29.660328 [debug] [Thread-1 (]: Using duckdb connection "model.my_star_schema_project.star_schema_view"
+[0m18:08:29.660535 [debug] [Thread-1 (]: On model.my_star_schema_project.star_schema_view: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "my_star_schema_profile", "target_name": "dev", "node_id": "model.my_star_schema_project.star_schema_view"} */
+alter view "duckdb"."main"."star_schema_view" rename to "star_schema_view__dbt_backup"
+[0m18:08:29.660842 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m18:08:29.662362 [debug] [Thread-1 (]: Using duckdb connection "model.my_star_schema_project.star_schema_view"
+[0m18:08:29.662557 [debug] [Thread-1 (]: On model.my_star_schema_project.star_schema_view: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "my_star_schema_profile", "target_name": "dev", "node_id": "model.my_star_schema_project.star_schema_view"} */
+alter view "duckdb"."main"."star_schema_view__dbt_tmp" rename to "star_schema_view"
+[0m18:08:29.662839 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m18:08:29.663628 [debug] [Thread-1 (]: On model.my_star_schema_project.star_schema_view: COMMIT
+[0m18:08:29.664744 [debug] [Thread-1 (]: Using duckdb connection "model.my_star_schema_project.star_schema_view"
+[0m18:08:29.664918 [debug] [Thread-1 (]: On model.my_star_schema_project.star_schema_view: COMMIT
+[0m18:08:29.665461 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m18:08:29.666785 [debug] [Thread-1 (]: Using duckdb connection "model.my_star_schema_project.star_schema_view"
+[0m18:08:29.666990 [debug] [Thread-1 (]: On model.my_star_schema_project.star_schema_view: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "my_star_schema_profile", "target_name": "dev", "node_id": "model.my_star_schema_project.star_schema_view"} */
+drop view if exists "duckdb"."main"."star_schema_view__dbt_backup" cascade
+[0m18:08:29.667373 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m18:08:29.667998 [debug] [Thread-1 (]: On model.my_star_schema_project.star_schema_view: Close
+[0m18:08:29.670391 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '338602c9-746d-4ef6-8b71-de36fb1f98cc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104705ea0>]}
+[0m18:08:29.670822 [info ] [Thread-1 (]: 5 of 5 OK created sql view model main.star_schema_view ......................... [[32mOK[0m in 0.03s]
+[0m18:08:29.671127 [debug] [Thread-1 (]: Finished running node model.my_star_schema_project.star_schema_view
+[0m18:08:29.671724 [debug] [MainThread]: Using duckdb connection "master"
+[0m18:08:29.671927 [debug] [MainThread]: On master: BEGIN
+[0m18:08:29.672086 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m18:08:29.677376 [debug] [MainThread]: SQL status: OK in 0.005 seconds
+[0m18:08:29.677835 [debug] [MainThread]: On master: COMMIT
+[0m18:08:29.678052 [debug] [MainThread]: Using duckdb connection "master"
+[0m18:08:29.678217 [debug] [MainThread]: On master: COMMIT
+[0m18:08:29.678460 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m18:08:29.678634 [debug] [MainThread]: On master: Close
+[0m18:08:29.679812 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m18:08:29.679995 [debug] [MainThread]: Connection 'model.my_star_schema_project.star_schema_view' was properly closed.
+[0m18:08:29.680210 [info ] [MainThread]: 
+[0m18:08:29.680398 [info ] [MainThread]: Finished running 5 view models in 0 hours 0 minutes and 0.40 seconds (0.40s).
+[0m18:08:29.680987 [debug] [MainThread]: Command end result
+[0m18:08:29.695665 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/takeshiiijima/github/duckdb-dbt/target/manifest.json
+[0m18:08:29.696654 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/takeshiiijima/github/duckdb-dbt/target/semantic_manifest.json
+[0m18:08:29.700178 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/takeshiiijima/github/duckdb-dbt/target/run_results.json
+[0m18:08:29.700378 [info ] [MainThread]: 
+[0m18:08:29.700601 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m18:08:29.700773 [info ] [MainThread]: 
+[0m18:08:29.700957 [info ] [MainThread]: Done. PASS=5 WARN=0 ERROR=0 SKIP=0 TOTAL=5
+[0m18:08:29.702384 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 0.891371, "process_in_blocks": "0", "process_kernel_time": 0.186528, "process_mem_max_rss": "137543680", "process_out_blocks": "0", "process_user_time": 1.286115}
+[0m18:08:29.702704 [debug] [MainThread]: Command `dbt run` succeeded at 18:08:29.702657 after 0.89 seconds
+[0m18:08:29.702940 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1036992d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10375ff70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104939ea0>]}
+[0m18:08:29.703189 [debug] [MainThread]: Flushing usage events
+[0m18:08:30.901650 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:18:21.752334 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104ec52a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105cd7460>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105cd6d10>]}
+
+
+============================== 18:18:21.756383 | 05de036f-0d67-413f-bd52-3d77aa5ab2c1 ==============================
+[0m18:18:21.756383 [info ] [MainThread]: Running with dbt=1.9.2
+[0m18:18:21.756881 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': '/Users/takeshiiijima/github/duckdb-dbt/logs', 'profiles_dir': '/Users/takeshiiijima/github/duckdb-dbt', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'invocation_command': 'dbt docs generate --static', 'log_format': 'default', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m18:18:21.976437 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '05de036f-0d67-413f-bd52-3d77aa5ab2c1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105e591b0>]}
+[0m18:18:22.008773 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '05de036f-0d67-413f-bd52-3d77aa5ab2c1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10517d030>]}
+[0m18:18:22.012443 [info ] [MainThread]: Registered adapter: duckdb=1.9.1
+[0m18:18:22.068827 [debug] [MainThread]: checksum: 12b12750b70de726cfd89136b8e24afc3f3e77597a97bff40ab7e5f9b39d5e18, vars: {}, profile: , target: , version: 1.9.2
+[0m18:18:22.154340 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m18:18:22.154639 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m18:18:22.185699 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '05de036f-0d67-413f-bd52-3d77aa5ab2c1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1062ac100>]}
+[0m18:18:22.197970 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '05de036f-0d67-413f-bd52-3d77aa5ab2c1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106275ea0>]}
+[0m18:18:22.198330 [info ] [MainThread]: Found 5 models, 4 seeds, 10 data tests, 426 macros
+[0m18:18:22.198541 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '05de036f-0d67-413f-bd52-3d77aa5ab2c1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106275930>]}
+[0m18:18:22.199671 [info ] [MainThread]: 
+[0m18:18:22.199887 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m18:18:22.200056 [info ] [MainThread]: 
+[0m18:18:22.200339 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m18:18:22.203171 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_duckdb_main'
+[0m18:18:22.236885 [debug] [ThreadPool]: Using duckdb connection "list_duckdb_main"
+[0m18:18:22.237147 [debug] [ThreadPool]: On list_duckdb_main: BEGIN
+[0m18:18:22.237320 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m18:18:22.279477 [debug] [ThreadPool]: SQL status: OK in 0.042 seconds
+[0m18:18:22.279852 [debug] [ThreadPool]: Using duckdb connection "list_duckdb_main"
+[0m18:18:22.280063 [debug] [ThreadPool]: On list_duckdb_main: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "my_star_schema_profile", "target_name": "dev", "connection_name": "list_duckdb_main"} */
+select
+      'duckdb' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main'
+    and lower(table_catalog) = 'duckdb'
+  
+[0m18:18:22.295671 [debug] [ThreadPool]: SQL status: OK in 0.015 seconds
+[0m18:18:22.296843 [debug] [ThreadPool]: On list_duckdb_main: ROLLBACK
+[0m18:18:22.297464 [debug] [ThreadPool]: Failed to rollback 'list_duckdb_main'
+[0m18:18:22.297657 [debug] [ThreadPool]: On list_duckdb_main: Close
+[0m18:18:22.300196 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '05de036f-0d67-413f-bd52-3d77aa5ab2c1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106274070>]}
+[0m18:18:22.301883 [debug] [Thread-1 (]: Began running node seed.my_star_schema_project.customers
+[0m18:18:22.302137 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_duckdb_main, now seed.my_star_schema_project.customers)
+[0m18:18:22.302325 [debug] [Thread-1 (]: Began compiling node seed.my_star_schema_project.customers
+[0m18:18:22.306170 [debug] [Thread-1 (]: Began executing node seed.my_star_schema_project.customers
+[0m18:18:22.306530 [debug] [Thread-1 (]: Finished running node seed.my_star_schema_project.customers
+[0m18:18:22.306728 [debug] [Thread-1 (]: Began running node seed.my_star_schema_project.dates
+[0m18:18:22.306991 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly seed.my_star_schema_project.customers, now seed.my_star_schema_project.dates)
+[0m18:18:22.307179 [debug] [Thread-1 (]: Began compiling node seed.my_star_schema_project.dates
+[0m18:18:22.308211 [debug] [Thread-1 (]: Began executing node seed.my_star_schema_project.dates
+[0m18:18:22.308532 [debug] [Thread-1 (]: Finished running node seed.my_star_schema_project.dates
+[0m18:18:22.308721 [debug] [Thread-1 (]: Began running node seed.my_star_schema_project.products
+[0m18:18:22.308952 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly seed.my_star_schema_project.dates, now seed.my_star_schema_project.products)
+[0m18:18:22.309134 [debug] [Thread-1 (]: Began compiling node seed.my_star_schema_project.products
+[0m18:18:22.310102 [debug] [Thread-1 (]: Began executing node seed.my_star_schema_project.products
+[0m18:18:22.310404 [debug] [Thread-1 (]: Finished running node seed.my_star_schema_project.products
+[0m18:18:22.310592 [debug] [Thread-1 (]: Began running node seed.my_star_schema_project.sales
+[0m18:18:22.310817 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly seed.my_star_schema_project.products, now seed.my_star_schema_project.sales)
+[0m18:18:22.310997 [debug] [Thread-1 (]: Began compiling node seed.my_star_schema_project.sales
+[0m18:18:22.311949 [debug] [Thread-1 (]: Began executing node seed.my_star_schema_project.sales
+[0m18:18:22.312254 [debug] [Thread-1 (]: Finished running node seed.my_star_schema_project.sales
+[0m18:18:22.312457 [debug] [Thread-1 (]: Began running node model.my_star_schema_project.dim_customers
+[0m18:18:22.312726 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly seed.my_star_schema_project.sales, now model.my_star_schema_project.dim_customers)
+[0m18:18:22.312917 [debug] [Thread-1 (]: Began compiling node model.my_star_schema_project.dim_customers
+[0m18:18:22.314696 [debug] [Thread-1 (]: Writing injected SQL for node "model.my_star_schema_project.dim_customers"
+[0m18:18:22.315348 [debug] [Thread-1 (]: Began executing node model.my_star_schema_project.dim_customers
+[0m18:18:22.315745 [debug] [Thread-1 (]: Finished running node model.my_star_schema_project.dim_customers
+[0m18:18:22.315955 [debug] [Thread-1 (]: Began running node model.my_star_schema_project.dim_dates
+[0m18:18:22.316161 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.my_star_schema_project.dim_customers, now model.my_star_schema_project.dim_dates)
+[0m18:18:22.316349 [debug] [Thread-1 (]: Began compiling node model.my_star_schema_project.dim_dates
+[0m18:18:22.317797 [debug] [Thread-1 (]: Writing injected SQL for node "model.my_star_schema_project.dim_dates"
+[0m18:18:22.318304 [debug] [Thread-1 (]: Began executing node model.my_star_schema_project.dim_dates
+[0m18:18:22.318650 [debug] [Thread-1 (]: Finished running node model.my_star_schema_project.dim_dates
+[0m18:18:22.318853 [debug] [Thread-1 (]: Began running node model.my_star_schema_project.dim_products
+[0m18:18:22.319073 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.my_star_schema_project.dim_dates, now model.my_star_schema_project.dim_products)
+[0m18:18:22.319258 [debug] [Thread-1 (]: Began compiling node model.my_star_schema_project.dim_products
+[0m18:18:22.320739 [debug] [Thread-1 (]: Writing injected SQL for node "model.my_star_schema_project.dim_products"
+[0m18:18:22.321033 [debug] [Thread-1 (]: Began executing node model.my_star_schema_project.dim_products
+[0m18:18:22.321348 [debug] [Thread-1 (]: Finished running node model.my_star_schema_project.dim_products
+[0m18:18:22.321536 [debug] [Thread-1 (]: Began running node model.my_star_schema_project.fact_sales
+[0m18:18:22.321804 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.my_star_schema_project.dim_products, now model.my_star_schema_project.fact_sales)
+[0m18:18:22.321984 [debug] [Thread-1 (]: Began compiling node model.my_star_schema_project.fact_sales
+[0m18:18:22.324029 [debug] [Thread-1 (]: Writing injected SQL for node "model.my_star_schema_project.fact_sales"
+[0m18:18:22.324328 [debug] [Thread-1 (]: Began executing node model.my_star_schema_project.fact_sales
+[0m18:18:22.324651 [debug] [Thread-1 (]: Finished running node model.my_star_schema_project.fact_sales
+[0m18:18:22.324847 [debug] [Thread-1 (]: Began running node test.my_star_schema_project.not_null_dim_customers_customer_city.f59e32635d
+[0m18:18:22.325076 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.my_star_schema_project.fact_sales, now test.my_star_schema_project.not_null_dim_customers_customer_city.f59e32635d)
+[0m18:18:22.325273 [debug] [Thread-1 (]: Began compiling node test.my_star_schema_project.not_null_dim_customers_customer_city.f59e32635d
+[0m18:18:22.331416 [debug] [Thread-1 (]: Writing injected SQL for node "test.my_star_schema_project.not_null_dim_customers_customer_city.f59e32635d"
+[0m18:18:22.332019 [debug] [Thread-1 (]: Began executing node test.my_star_schema_project.not_null_dim_customers_customer_city.f59e32635d
+[0m18:18:22.332399 [debug] [Thread-1 (]: Finished running node test.my_star_schema_project.not_null_dim_customers_customer_city.f59e32635d
+[0m18:18:22.332608 [debug] [Thread-1 (]: Began running node test.my_star_schema_project.not_null_dim_customers_customer_id.dd91cd1c8d
+[0m18:18:22.332846 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.my_star_schema_project.not_null_dim_customers_customer_city.f59e32635d, now test.my_star_schema_project.not_null_dim_customers_customer_id.dd91cd1c8d)
+[0m18:18:22.333039 [debug] [Thread-1 (]: Began compiling node test.my_star_schema_project.not_null_dim_customers_customer_id.dd91cd1c8d
+[0m18:18:22.335145 [debug] [Thread-1 (]: Writing injected SQL for node "test.my_star_schema_project.not_null_dim_customers_customer_id.dd91cd1c8d"
+[0m18:18:22.335453 [debug] [Thread-1 (]: Began executing node test.my_star_schema_project.not_null_dim_customers_customer_id.dd91cd1c8d
+[0m18:18:22.335780 [debug] [Thread-1 (]: Finished running node test.my_star_schema_project.not_null_dim_customers_customer_id.dd91cd1c8d
+[0m18:18:22.335979 [debug] [Thread-1 (]: Began running node test.my_star_schema_project.not_null_dim_customers_customer_name.c8ab2d704d
+[0m18:18:22.336190 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.my_star_schema_project.not_null_dim_customers_customer_id.dd91cd1c8d, now test.my_star_schema_project.not_null_dim_customers_customer_name.c8ab2d704d)
+[0m18:18:22.336375 [debug] [Thread-1 (]: Began compiling node test.my_star_schema_project.not_null_dim_customers_customer_name.c8ab2d704d
+[0m18:18:22.338380 [debug] [Thread-1 (]: Writing injected SQL for node "test.my_star_schema_project.not_null_dim_customers_customer_name.c8ab2d704d"
+[0m18:18:22.338682 [debug] [Thread-1 (]: Began executing node test.my_star_schema_project.not_null_dim_customers_customer_name.c8ab2d704d
+[0m18:18:22.339010 [debug] [Thread-1 (]: Finished running node test.my_star_schema_project.not_null_dim_customers_customer_name.c8ab2d704d
+[0m18:18:22.339213 [debug] [Thread-1 (]: Began running node test.my_star_schema_project.not_null_dim_customers_customer_state.7c7083b6aa
+[0m18:18:22.339423 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.my_star_schema_project.not_null_dim_customers_customer_name.c8ab2d704d, now test.my_star_schema_project.not_null_dim_customers_customer_state.7c7083b6aa)
+[0m18:18:22.339612 [debug] [Thread-1 (]: Began compiling node test.my_star_schema_project.not_null_dim_customers_customer_state.7c7083b6aa
+[0m18:18:22.341543 [debug] [Thread-1 (]: Writing injected SQL for node "test.my_star_schema_project.not_null_dim_customers_customer_state.7c7083b6aa"
+[0m18:18:22.341839 [debug] [Thread-1 (]: Began executing node test.my_star_schema_project.not_null_dim_customers_customer_state.7c7083b6aa
+[0m18:18:22.342159 [debug] [Thread-1 (]: Finished running node test.my_star_schema_project.not_null_dim_customers_customer_state.7c7083b6aa
+[0m18:18:22.342353 [debug] [Thread-1 (]: Began running node test.my_star_schema_project.unique_dim_customers_customer_id.15c9f1e2fd
+[0m18:18:22.342563 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.my_star_schema_project.not_null_dim_customers_customer_state.7c7083b6aa, now test.my_star_schema_project.unique_dim_customers_customer_id.15c9f1e2fd)
+[0m18:18:22.342749 [debug] [Thread-1 (]: Began compiling node test.my_star_schema_project.unique_dim_customers_customer_id.15c9f1e2fd
+[0m18:18:22.345984 [debug] [Thread-1 (]: Writing injected SQL for node "test.my_star_schema_project.unique_dim_customers_customer_id.15c9f1e2fd"
+[0m18:18:22.346584 [debug] [Thread-1 (]: Began executing node test.my_star_schema_project.unique_dim_customers_customer_id.15c9f1e2fd
+[0m18:18:22.347098 [debug] [Thread-1 (]: Finished running node test.my_star_schema_project.unique_dim_customers_customer_id.15c9f1e2fd
+[0m18:18:22.347340 [debug] [Thread-1 (]: Began running node test.my_star_schema_project.not_null_dim_products_price.93519fc0ed
+[0m18:18:22.347601 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.my_star_schema_project.unique_dim_customers_customer_id.15c9f1e2fd, now test.my_star_schema_project.not_null_dim_products_price.93519fc0ed)
+[0m18:18:22.347806 [debug] [Thread-1 (]: Began compiling node test.my_star_schema_project.not_null_dim_products_price.93519fc0ed
+[0m18:18:22.350796 [debug] [Thread-1 (]: Writing injected SQL for node "test.my_star_schema_project.not_null_dim_products_price.93519fc0ed"
+[0m18:18:22.351308 [debug] [Thread-1 (]: Began executing node test.my_star_schema_project.not_null_dim_products_price.93519fc0ed
+[0m18:18:22.351643 [debug] [Thread-1 (]: Finished running node test.my_star_schema_project.not_null_dim_products_price.93519fc0ed
+[0m18:18:22.351839 [debug] [Thread-1 (]: Began running node test.my_star_schema_project.not_null_dim_products_product_category.069796c541
+[0m18:18:22.352052 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.my_star_schema_project.not_null_dim_products_price.93519fc0ed, now test.my_star_schema_project.not_null_dim_products_product_category.069796c541)
+[0m18:18:22.352241 [debug] [Thread-1 (]: Began compiling node test.my_star_schema_project.not_null_dim_products_product_category.069796c541
+[0m18:18:22.354186 [debug] [Thread-1 (]: Writing injected SQL for node "test.my_star_schema_project.not_null_dim_products_product_category.069796c541"
+[0m18:18:22.354492 [debug] [Thread-1 (]: Began executing node test.my_star_schema_project.not_null_dim_products_product_category.069796c541
+[0m18:18:22.354816 [debug] [Thread-1 (]: Finished running node test.my_star_schema_project.not_null_dim_products_product_category.069796c541
+[0m18:18:22.355010 [debug] [Thread-1 (]: Began running node test.my_star_schema_project.not_null_dim_products_product_id.c8aba288d1
+[0m18:18:22.355222 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.my_star_schema_project.not_null_dim_products_product_category.069796c541, now test.my_star_schema_project.not_null_dim_products_product_id.c8aba288d1)
+[0m18:18:22.355412 [debug] [Thread-1 (]: Began compiling node test.my_star_schema_project.not_null_dim_products_product_id.c8aba288d1
+[0m18:18:22.357399 [debug] [Thread-1 (]: Writing injected SQL for node "test.my_star_schema_project.not_null_dim_products_product_id.c8aba288d1"
+[0m18:18:22.357860 [debug] [Thread-1 (]: Began executing node test.my_star_schema_project.not_null_dim_products_product_id.c8aba288d1
+[0m18:18:22.358212 [debug] [Thread-1 (]: Finished running node test.my_star_schema_project.not_null_dim_products_product_id.c8aba288d1
+[0m18:18:22.358428 [debug] [Thread-1 (]: Began running node test.my_star_schema_project.not_null_dim_products_product_name.991aec73f3
+[0m18:18:22.358657 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.my_star_schema_project.not_null_dim_products_product_id.c8aba288d1, now test.my_star_schema_project.not_null_dim_products_product_name.991aec73f3)
+[0m18:18:22.358845 [debug] [Thread-1 (]: Began compiling node test.my_star_schema_project.not_null_dim_products_product_name.991aec73f3
+[0m18:18:22.360963 [debug] [Thread-1 (]: Writing injected SQL for node "test.my_star_schema_project.not_null_dim_products_product_name.991aec73f3"
+[0m18:18:22.361286 [debug] [Thread-1 (]: Began executing node test.my_star_schema_project.not_null_dim_products_product_name.991aec73f3
+[0m18:18:22.361615 [debug] [Thread-1 (]: Finished running node test.my_star_schema_project.not_null_dim_products_product_name.991aec73f3
+[0m18:18:22.361812 [debug] [Thread-1 (]: Began running node test.my_star_schema_project.unique_dim_products_product_id.ef7b2a9985
+[0m18:18:22.362023 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.my_star_schema_project.not_null_dim_products_product_name.991aec73f3, now test.my_star_schema_project.unique_dim_products_product_id.ef7b2a9985)
+[0m18:18:22.362209 [debug] [Thread-1 (]: Began compiling node test.my_star_schema_project.unique_dim_products_product_id.ef7b2a9985
+[0m18:18:22.364348 [debug] [Thread-1 (]: Writing injected SQL for node "test.my_star_schema_project.unique_dim_products_product_id.ef7b2a9985"
+[0m18:18:22.364768 [debug] [Thread-1 (]: Began executing node test.my_star_schema_project.unique_dim_products_product_id.ef7b2a9985
+[0m18:18:22.365135 [debug] [Thread-1 (]: Finished running node test.my_star_schema_project.unique_dim_products_product_id.ef7b2a9985
+[0m18:18:22.365350 [debug] [Thread-1 (]: Began running node model.my_star_schema_project.star_schema_view
+[0m18:18:22.365588 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.my_star_schema_project.unique_dim_products_product_id.ef7b2a9985, now model.my_star_schema_project.star_schema_view)
+[0m18:18:22.365778 [debug] [Thread-1 (]: Began compiling node model.my_star_schema_project.star_schema_view
+[0m18:18:22.367661 [debug] [Thread-1 (]: Writing injected SQL for node "model.my_star_schema_project.star_schema_view"
+[0m18:18:22.368135 [debug] [Thread-1 (]: Began executing node model.my_star_schema_project.star_schema_view
+[0m18:18:22.368477 [debug] [Thread-1 (]: Finished running node model.my_star_schema_project.star_schema_view
+[0m18:18:22.368925 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m18:18:22.369107 [debug] [MainThread]: Connection 'model.my_star_schema_project.star_schema_view' was properly closed.
+[0m18:18:22.370420 [debug] [MainThread]: Command end result
+[0m18:18:22.452317 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/takeshiiijima/github/duckdb-dbt/target/manifest.json
+[0m18:18:22.454122 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/takeshiiijima/github/duckdb-dbt/target/semantic_manifest.json
+[0m18:18:22.458464 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/takeshiiijima/github/duckdb-dbt/target/run_results.json
+[0m18:18:22.460965 [debug] [MainThread]: Acquiring new duckdb connection 'generate_catalog'
+[0m18:18:22.461177 [info ] [MainThread]: Building catalog
+[0m18:18:22.466739 [debug] [ThreadPool]: Acquiring new duckdb connection 'duckdb.information_schema'
+[0m18:18:22.471166 [debug] [ThreadPool]: Using duckdb connection "duckdb.information_schema"
+[0m18:18:22.471583 [debug] [ThreadPool]: On duckdb.information_schema: BEGIN
+[0m18:18:22.471785 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m18:18:22.477467 [debug] [ThreadPool]: SQL status: OK in 0.006 seconds
+[0m18:18:22.477960 [debug] [ThreadPool]: Using duckdb connection "duckdb.information_schema"
+[0m18:18:22.478221 [debug] [ThreadPool]: On duckdb.information_schema: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "my_star_schema_profile", "target_name": "dev", "connection_name": "duckdb.information_schema"} */
+with relations AS (
+      select
+        t.table_name
+        , t.database_name
+        , t.schema_name
+        , 'BASE TABLE' as table_type
+        , t.comment as table_comment
+      from duckdb_tables() t
+      WHERE t.database_name = 'duckdb'
+      UNION ALL
+      SELECT v.view_name as table_name
+      , v.database_name
+      , v.schema_name
+      , 'VIEW' as table_type
+      , v.comment as table_comment
+      from duckdb_views() v
+      WHERE v.database_name = 'duckdb'
+    )
+    select
+        'duckdb' as table_database,
+        r.schema_name as table_schema,
+        r.table_name,
+        r.table_type,
+        r.table_comment,
+        c.column_name,
+        c.column_index as column_index,
+        c.data_type as column_type,
+        c.comment as column_comment,
+        '' as table_owner
+    FROM relations r JOIN duckdb_columns() c ON r.schema_name = c.schema_name AND r.table_name = c.table_name
+    WHERE (upper(r.schema_name) = upper('main'))
+    ORDER BY
+        r.schema_name,
+        r.table_name,
+        c.column_index
+[0m18:18:22.493036 [debug] [ThreadPool]: SQL status: OK in 0.015 seconds
+[0m18:18:22.509715 [debug] [ThreadPool]: On duckdb.information_schema: ROLLBACK
+[0m18:18:22.510051 [debug] [ThreadPool]: Failed to rollback 'duckdb.information_schema'
+[0m18:18:22.510224 [debug] [ThreadPool]: On duckdb.information_schema: Close
+[0m18:18:22.526624 [debug] [MainThread]: Wrote artifact CatalogArtifact to /Users/takeshiiijima/github/duckdb-dbt/target/catalog.json
+[0m18:18:22.539689 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/takeshiiijima/github/duckdb-dbt/target/manifest.json
+[0m18:18:22.540527 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/takeshiiijima/github/duckdb-dbt/target/semantic_manifest.json
+[0m18:18:22.545790 [info ] [MainThread]: Catalog written to /Users/takeshiiijima/github/duckdb-dbt/target/catalog.json
+[0m18:18:22.549583 [debug] [MainThread]: Resource report: {"command_name": "generate", "command_success": true, "command_wall_clock_time": 0.8605573, "process_in_blocks": "0", "process_kernel_time": 0.197598, "process_mem_max_rss": "155140096", "process_out_blocks": "0", "process_user_time": 1.24894}
+[0m18:18:22.549921 [debug] [MainThread]: Command `dbt docs generate` succeeded at 18:18:22.549872 after 0.86 seconds
+[0m18:18:22.550125 [debug] [MainThread]: Connection 'generate_catalog' was properly closed.
+[0m18:18:22.550281 [debug] [MainThread]: Connection 'duckdb.information_schema' was properly closed.
+[0m18:18:22.550476 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104ec52a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10517d030>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1057d5e40>]}
+[0m18:18:22.550699 [debug] [MainThread]: Flushing usage events
+[0m18:18:23.575908 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:32:09.870517 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105bc12d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107397eb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107396ec0>]}
+
+
+============================== 18:32:09.873504 | f74ad143-7bf0-435c-8ca3-e17adce632c8 ==============================
+[0m18:32:09.873504 [info ] [MainThread]: Running with dbt=1.9.2
+[0m18:32:09.873923 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': '/Users/takeshiiijima/github/duckdb-dbt', 'log_path': '/Users/takeshiiijima/github/duckdb-dbt/logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt docs generate --static', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m18:32:10.026603 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'f74ad143-7bf0-435c-8ca3-e17adce632c8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104957640>]}
+[0m18:32:10.055434 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'f74ad143-7bf0-435c-8ca3-e17adce632c8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10757b130>]}
+[0m18:32:10.058363 [info ] [MainThread]: Registered adapter: duckdb=1.9.1
+[0m18:32:10.112551 [debug] [MainThread]: checksum: 12b12750b70de726cfd89136b8e24afc3f3e77597a97bff40ab7e5f9b39d5e18, vars: {}, profile: , target: , version: 1.9.2
+[0m18:32:10.227303 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m18:32:10.227678 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m18:32:10.272278 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'f74ad143-7bf0-435c-8ca3-e17adce632c8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107c6c130>]}
+[0m18:32:10.286117 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'f74ad143-7bf0-435c-8ca3-e17adce632c8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107c6f1c0>]}
+[0m18:32:10.286490 [info ] [MainThread]: Found 5 models, 4 seeds, 10 data tests, 426 macros
+[0m18:32:10.286709 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'f74ad143-7bf0-435c-8ca3-e17adce632c8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107c6f220>]}
+[0m18:32:10.287946 [info ] [MainThread]: 
+[0m18:32:10.288169 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m18:32:10.288337 [info ] [MainThread]: 
+[0m18:32:10.289893 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m18:32:10.302312 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_duckdb_main'
+[0m18:32:10.334969 [debug] [ThreadPool]: Using duckdb connection "list_duckdb_main"
+[0m18:32:10.335241 [debug] [ThreadPool]: On list_duckdb_main: BEGIN
+[0m18:32:10.335414 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m18:32:10.379377 [debug] [ThreadPool]: SQL status: OK in 0.044 seconds
+[0m18:32:10.379667 [debug] [ThreadPool]: Using duckdb connection "list_duckdb_main"
+[0m18:32:10.379859 [debug] [ThreadPool]: On list_duckdb_main: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "my_star_schema_profile", "target_name": "dev", "connection_name": "list_duckdb_main"} */
+select
+      'duckdb' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main'
+    and lower(table_catalog) = 'duckdb'
+  
+[0m18:32:10.396632 [debug] [ThreadPool]: SQL status: OK in 0.017 seconds
+[0m18:32:10.397764 [debug] [ThreadPool]: On list_duckdb_main: ROLLBACK
+[0m18:32:10.398362 [debug] [ThreadPool]: Failed to rollback 'list_duckdb_main'
+[0m18:32:10.398533 [debug] [ThreadPool]: On list_duckdb_main: Close
+[0m18:32:10.401153 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'f74ad143-7bf0-435c-8ca3-e17adce632c8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107c6ce50>]}
+[0m18:32:10.402906 [debug] [Thread-1 (]: Began running node seed.my_star_schema_project.customers
+[0m18:32:10.403233 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_duckdb_main, now seed.my_star_schema_project.customers)
+[0m18:32:10.403451 [debug] [Thread-1 (]: Began compiling node seed.my_star_schema_project.customers
+[0m18:32:10.407474 [debug] [Thread-1 (]: Began executing node seed.my_star_schema_project.customers
+[0m18:32:10.407886 [debug] [Thread-1 (]: Finished running node seed.my_star_schema_project.customers
+[0m18:32:10.408095 [debug] [Thread-1 (]: Began running node seed.my_star_schema_project.dates
+[0m18:32:10.408391 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly seed.my_star_schema_project.customers, now seed.my_star_schema_project.dates)
+[0m18:32:10.408606 [debug] [Thread-1 (]: Began compiling node seed.my_star_schema_project.dates
+[0m18:32:10.409636 [debug] [Thread-1 (]: Began executing node seed.my_star_schema_project.dates
+[0m18:32:10.409960 [debug] [Thread-1 (]: Finished running node seed.my_star_schema_project.dates
+[0m18:32:10.410156 [debug] [Thread-1 (]: Began running node seed.my_star_schema_project.products
+[0m18:32:10.410396 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly seed.my_star_schema_project.dates, now seed.my_star_schema_project.products)
+[0m18:32:10.410580 [debug] [Thread-1 (]: Began compiling node seed.my_star_schema_project.products
+[0m18:32:10.411597 [debug] [Thread-1 (]: Began executing node seed.my_star_schema_project.products
+[0m18:32:10.411893 [debug] [Thread-1 (]: Finished running node seed.my_star_schema_project.products
+[0m18:32:10.412080 [debug] [Thread-1 (]: Began running node seed.my_star_schema_project.sales
+[0m18:32:10.412310 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly seed.my_star_schema_project.products, now seed.my_star_schema_project.sales)
+[0m18:32:10.412490 [debug] [Thread-1 (]: Began compiling node seed.my_star_schema_project.sales
+[0m18:32:10.413446 [debug] [Thread-1 (]: Began executing node seed.my_star_schema_project.sales
+[0m18:32:10.413745 [debug] [Thread-1 (]: Finished running node seed.my_star_schema_project.sales
+[0m18:32:10.413937 [debug] [Thread-1 (]: Began running node model.my_star_schema_project.dim_customers
+[0m18:32:10.414121 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly seed.my_star_schema_project.sales, now model.my_star_schema_project.dim_customers)
+[0m18:32:10.414297 [debug] [Thread-1 (]: Began compiling node model.my_star_schema_project.dim_customers
+[0m18:32:10.415775 [debug] [Thread-1 (]: Writing injected SQL for node "model.my_star_schema_project.dim_customers"
+[0m18:32:10.416154 [debug] [Thread-1 (]: Began executing node model.my_star_schema_project.dim_customers
+[0m18:32:10.416470 [debug] [Thread-1 (]: Finished running node model.my_star_schema_project.dim_customers
+[0m18:32:10.416660 [debug] [Thread-1 (]: Began running node model.my_star_schema_project.dim_dates
+[0m18:32:10.416848 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.my_star_schema_project.dim_customers, now model.my_star_schema_project.dim_dates)
+[0m18:32:10.417025 [debug] [Thread-1 (]: Began compiling node model.my_star_schema_project.dim_dates
+[0m18:32:10.418410 [debug] [Thread-1 (]: Writing injected SQL for node "model.my_star_schema_project.dim_dates"
+[0m18:32:10.418895 [debug] [Thread-1 (]: Began executing node model.my_star_schema_project.dim_dates
+[0m18:32:10.419205 [debug] [Thread-1 (]: Finished running node model.my_star_schema_project.dim_dates
+[0m18:32:10.419390 [debug] [Thread-1 (]: Began running node model.my_star_schema_project.dim_products
+[0m18:32:10.419595 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.my_star_schema_project.dim_dates, now model.my_star_schema_project.dim_products)
+[0m18:32:10.419779 [debug] [Thread-1 (]: Began compiling node model.my_star_schema_project.dim_products
+[0m18:32:10.421272 [debug] [Thread-1 (]: Writing injected SQL for node "model.my_star_schema_project.dim_products"
+[0m18:32:10.421551 [debug] [Thread-1 (]: Began executing node model.my_star_schema_project.dim_products
+[0m18:32:10.421857 [debug] [Thread-1 (]: Finished running node model.my_star_schema_project.dim_products
+[0m18:32:10.422041 [debug] [Thread-1 (]: Began running node model.my_star_schema_project.fact_sales
+[0m18:32:10.422300 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.my_star_schema_project.dim_products, now model.my_star_schema_project.fact_sales)
+[0m18:32:10.422481 [debug] [Thread-1 (]: Began compiling node model.my_star_schema_project.fact_sales
+[0m18:32:10.424666 [debug] [Thread-1 (]: Writing injected SQL for node "model.my_star_schema_project.fact_sales"
+[0m18:32:10.425062 [debug] [Thread-1 (]: Began executing node model.my_star_schema_project.fact_sales
+[0m18:32:10.425414 [debug] [Thread-1 (]: Finished running node model.my_star_schema_project.fact_sales
+[0m18:32:10.425622 [debug] [Thread-1 (]: Began running node test.my_star_schema_project.not_null_dim_customers_customer_city.f59e32635d
+[0m18:32:10.425883 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.my_star_schema_project.fact_sales, now test.my_star_schema_project.not_null_dim_customers_customer_city.f59e32635d)
+[0m18:32:10.426083 [debug] [Thread-1 (]: Began compiling node test.my_star_schema_project.not_null_dim_customers_customer_city.f59e32635d
+[0m18:32:10.431959 [debug] [Thread-1 (]: Writing injected SQL for node "test.my_star_schema_project.not_null_dim_customers_customer_city.f59e32635d"
+[0m18:32:10.432557 [debug] [Thread-1 (]: Began executing node test.my_star_schema_project.not_null_dim_customers_customer_city.f59e32635d
+[0m18:32:10.432905 [debug] [Thread-1 (]: Finished running node test.my_star_schema_project.not_null_dim_customers_customer_city.f59e32635d
+[0m18:32:10.433121 [debug] [Thread-1 (]: Began running node test.my_star_schema_project.not_null_dim_customers_customer_id.dd91cd1c8d
+[0m18:32:10.433357 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.my_star_schema_project.not_null_dim_customers_customer_city.f59e32635d, now test.my_star_schema_project.not_null_dim_customers_customer_id.dd91cd1c8d)
+[0m18:32:10.433549 [debug] [Thread-1 (]: Began compiling node test.my_star_schema_project.not_null_dim_customers_customer_id.dd91cd1c8d
+[0m18:32:10.435801 [debug] [Thread-1 (]: Writing injected SQL for node "test.my_star_schema_project.not_null_dim_customers_customer_id.dd91cd1c8d"
+[0m18:32:10.436121 [debug] [Thread-1 (]: Began executing node test.my_star_schema_project.not_null_dim_customers_customer_id.dd91cd1c8d
+[0m18:32:10.436448 [debug] [Thread-1 (]: Finished running node test.my_star_schema_project.not_null_dim_customers_customer_id.dd91cd1c8d
+[0m18:32:10.436645 [debug] [Thread-1 (]: Began running node test.my_star_schema_project.not_null_dim_customers_customer_name.c8ab2d704d
+[0m18:32:10.436860 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.my_star_schema_project.not_null_dim_customers_customer_id.dd91cd1c8d, now test.my_star_schema_project.not_null_dim_customers_customer_name.c8ab2d704d)
+[0m18:32:10.437045 [debug] [Thread-1 (]: Began compiling node test.my_star_schema_project.not_null_dim_customers_customer_name.c8ab2d704d
+[0m18:32:10.439035 [debug] [Thread-1 (]: Writing injected SQL for node "test.my_star_schema_project.not_null_dim_customers_customer_name.c8ab2d704d"
+[0m18:32:10.439321 [debug] [Thread-1 (]: Began executing node test.my_star_schema_project.not_null_dim_customers_customer_name.c8ab2d704d
+[0m18:32:10.439755 [debug] [Thread-1 (]: Finished running node test.my_star_schema_project.not_null_dim_customers_customer_name.c8ab2d704d
+[0m18:32:10.439979 [debug] [Thread-1 (]: Began running node test.my_star_schema_project.not_null_dim_customers_customer_state.7c7083b6aa
+[0m18:32:10.440223 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.my_star_schema_project.not_null_dim_customers_customer_name.c8ab2d704d, now test.my_star_schema_project.not_null_dim_customers_customer_state.7c7083b6aa)
+[0m18:32:10.440508 [debug] [Thread-1 (]: Began compiling node test.my_star_schema_project.not_null_dim_customers_customer_state.7c7083b6aa
+[0m18:32:10.442594 [debug] [Thread-1 (]: Writing injected SQL for node "test.my_star_schema_project.not_null_dim_customers_customer_state.7c7083b6aa"
+[0m18:32:10.442930 [debug] [Thread-1 (]: Began executing node test.my_star_schema_project.not_null_dim_customers_customer_state.7c7083b6aa
+[0m18:32:10.443253 [debug] [Thread-1 (]: Finished running node test.my_star_schema_project.not_null_dim_customers_customer_state.7c7083b6aa
+[0m18:32:10.443448 [debug] [Thread-1 (]: Began running node test.my_star_schema_project.unique_dim_customers_customer_id.15c9f1e2fd
+[0m18:32:10.443659 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.my_star_schema_project.not_null_dim_customers_customer_state.7c7083b6aa, now test.my_star_schema_project.unique_dim_customers_customer_id.15c9f1e2fd)
+[0m18:32:10.443848 [debug] [Thread-1 (]: Began compiling node test.my_star_schema_project.unique_dim_customers_customer_id.15c9f1e2fd
+[0m18:32:10.446987 [debug] [Thread-1 (]: Writing injected SQL for node "test.my_star_schema_project.unique_dim_customers_customer_id.15c9f1e2fd"
+[0m18:32:10.447319 [debug] [Thread-1 (]: Began executing node test.my_star_schema_project.unique_dim_customers_customer_id.15c9f1e2fd
+[0m18:32:10.447653 [debug] [Thread-1 (]: Finished running node test.my_star_schema_project.unique_dim_customers_customer_id.15c9f1e2fd
+[0m18:32:10.447856 [debug] [Thread-1 (]: Began running node test.my_star_schema_project.not_null_dim_products_price.93519fc0ed
+[0m18:32:10.448113 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.my_star_schema_project.unique_dim_customers_customer_id.15c9f1e2fd, now test.my_star_schema_project.not_null_dim_products_price.93519fc0ed)
+[0m18:32:10.448331 [debug] [Thread-1 (]: Began compiling node test.my_star_schema_project.not_null_dim_products_price.93519fc0ed
+[0m18:32:10.451258 [debug] [Thread-1 (]: Writing injected SQL for node "test.my_star_schema_project.not_null_dim_products_price.93519fc0ed"
+[0m18:32:10.451606 [debug] [Thread-1 (]: Began executing node test.my_star_schema_project.not_null_dim_products_price.93519fc0ed
+[0m18:32:10.451946 [debug] [Thread-1 (]: Finished running node test.my_star_schema_project.not_null_dim_products_price.93519fc0ed
+[0m18:32:10.452143 [debug] [Thread-1 (]: Began running node test.my_star_schema_project.not_null_dim_products_product_category.069796c541
+[0m18:32:10.452364 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.my_star_schema_project.not_null_dim_products_price.93519fc0ed, now test.my_star_schema_project.not_null_dim_products_product_category.069796c541)
+[0m18:32:10.452549 [debug] [Thread-1 (]: Began compiling node test.my_star_schema_project.not_null_dim_products_product_category.069796c541
+[0m18:32:10.454546 [debug] [Thread-1 (]: Writing injected SQL for node "test.my_star_schema_project.not_null_dim_products_product_category.069796c541"
+[0m18:32:10.454874 [debug] [Thread-1 (]: Began executing node test.my_star_schema_project.not_null_dim_products_product_category.069796c541
+[0m18:32:10.455208 [debug] [Thread-1 (]: Finished running node test.my_star_schema_project.not_null_dim_products_product_category.069796c541
+[0m18:32:10.455403 [debug] [Thread-1 (]: Began running node test.my_star_schema_project.not_null_dim_products_product_id.c8aba288d1
+[0m18:32:10.455616 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.my_star_schema_project.not_null_dim_products_product_category.069796c541, now test.my_star_schema_project.not_null_dim_products_product_id.c8aba288d1)
+[0m18:32:10.455811 [debug] [Thread-1 (]: Began compiling node test.my_star_schema_project.not_null_dim_products_product_id.c8aba288d1
+[0m18:32:10.458004 [debug] [Thread-1 (]: Writing injected SQL for node "test.my_star_schema_project.not_null_dim_products_product_id.c8aba288d1"
+[0m18:32:10.458506 [debug] [Thread-1 (]: Began executing node test.my_star_schema_project.not_null_dim_products_product_id.c8aba288d1
+[0m18:32:10.458842 [debug] [Thread-1 (]: Finished running node test.my_star_schema_project.not_null_dim_products_product_id.c8aba288d1
+[0m18:32:10.459048 [debug] [Thread-1 (]: Began running node test.my_star_schema_project.not_null_dim_products_product_name.991aec73f3
+[0m18:32:10.459279 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.my_star_schema_project.not_null_dim_products_product_id.c8aba288d1, now test.my_star_schema_project.not_null_dim_products_product_name.991aec73f3)
+[0m18:32:10.459469 [debug] [Thread-1 (]: Began compiling node test.my_star_schema_project.not_null_dim_products_product_name.991aec73f3
+[0m18:32:10.461642 [debug] [Thread-1 (]: Writing injected SQL for node "test.my_star_schema_project.not_null_dim_products_product_name.991aec73f3"
+[0m18:32:10.461949 [debug] [Thread-1 (]: Began executing node test.my_star_schema_project.not_null_dim_products_product_name.991aec73f3
+[0m18:32:10.462267 [debug] [Thread-1 (]: Finished running node test.my_star_schema_project.not_null_dim_products_product_name.991aec73f3
+[0m18:32:10.462459 [debug] [Thread-1 (]: Began running node test.my_star_schema_project.unique_dim_products_product_id.ef7b2a9985
+[0m18:32:10.462672 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.my_star_schema_project.not_null_dim_products_product_name.991aec73f3, now test.my_star_schema_project.unique_dim_products_product_id.ef7b2a9985)
+[0m18:32:10.462857 [debug] [Thread-1 (]: Began compiling node test.my_star_schema_project.unique_dim_products_product_id.ef7b2a9985
+[0m18:32:10.464820 [debug] [Thread-1 (]: Writing injected SQL for node "test.my_star_schema_project.unique_dim_products_product_id.ef7b2a9985"
+[0m18:32:10.465097 [debug] [Thread-1 (]: Began executing node test.my_star_schema_project.unique_dim_products_product_id.ef7b2a9985
+[0m18:32:10.465412 [debug] [Thread-1 (]: Finished running node test.my_star_schema_project.unique_dim_products_product_id.ef7b2a9985
+[0m18:32:10.465606 [debug] [Thread-1 (]: Began running node model.my_star_schema_project.star_schema_view
+[0m18:32:10.465814 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.my_star_schema_project.unique_dim_products_product_id.ef7b2a9985, now model.my_star_schema_project.star_schema_view)
+[0m18:32:10.465996 [debug] [Thread-1 (]: Began compiling node model.my_star_schema_project.star_schema_view
+[0m18:32:10.467733 [debug] [Thread-1 (]: Writing injected SQL for node "model.my_star_schema_project.star_schema_view"
+[0m18:32:10.468230 [debug] [Thread-1 (]: Began executing node model.my_star_schema_project.star_schema_view
+[0m18:32:10.468544 [debug] [Thread-1 (]: Finished running node model.my_star_schema_project.star_schema_view
+[0m18:32:10.469002 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m18:32:10.469207 [debug] [MainThread]: Connection 'model.my_star_schema_project.star_schema_view' was properly closed.
+[0m18:32:10.470521 [debug] [MainThread]: Command end result
+[0m18:32:10.548020 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/takeshiiijima/github/duckdb-dbt/target/manifest.json
+[0m18:32:10.549510 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/takeshiiijima/github/duckdb-dbt/target/semantic_manifest.json
+[0m18:32:10.553642 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/takeshiiijima/github/duckdb-dbt/target/run_results.json
+[0m18:32:10.555894 [debug] [MainThread]: Acquiring new duckdb connection 'generate_catalog'
+[0m18:32:10.556101 [info ] [MainThread]: Building catalog
+[0m18:32:10.561624 [debug] [ThreadPool]: Acquiring new duckdb connection 'duckdb.information_schema'
+[0m18:32:10.565939 [debug] [ThreadPool]: Using duckdb connection "duckdb.information_schema"
+[0m18:32:10.566261 [debug] [ThreadPool]: On duckdb.information_schema: BEGIN
+[0m18:32:10.566540 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m18:32:10.572264 [debug] [ThreadPool]: SQL status: OK in 0.006 seconds
+[0m18:32:10.572549 [debug] [ThreadPool]: Using duckdb connection "duckdb.information_schema"
+[0m18:32:10.572752 [debug] [ThreadPool]: On duckdb.information_schema: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "my_star_schema_profile", "target_name": "dev", "connection_name": "duckdb.information_schema"} */
+with relations AS (
+      select
+        t.table_name
+        , t.database_name
+        , t.schema_name
+        , 'BASE TABLE' as table_type
+        , t.comment as table_comment
+      from duckdb_tables() t
+      WHERE t.database_name = 'duckdb'
+      UNION ALL
+      SELECT v.view_name as table_name
+      , v.database_name
+      , v.schema_name
+      , 'VIEW' as table_type
+      , v.comment as table_comment
+      from duckdb_views() v
+      WHERE v.database_name = 'duckdb'
+    )
+    select
+        'duckdb' as table_database,
+        r.schema_name as table_schema,
+        r.table_name,
+        r.table_type,
+        r.table_comment,
+        c.column_name,
+        c.column_index as column_index,
+        c.data_type as column_type,
+        c.comment as column_comment,
+        '' as table_owner
+    FROM relations r JOIN duckdb_columns() c ON r.schema_name = c.schema_name AND r.table_name = c.table_name
+    WHERE (upper(r.schema_name) = upper('main'))
+    ORDER BY
+        r.schema_name,
+        r.table_name,
+        c.column_index
+[0m18:32:10.585973 [debug] [ThreadPool]: SQL status: OK in 0.013 seconds
+[0m18:32:10.601807 [debug] [ThreadPool]: On duckdb.information_schema: ROLLBACK
+[0m18:32:10.602092 [debug] [ThreadPool]: Failed to rollback 'duckdb.information_schema'
+[0m18:32:10.602254 [debug] [ThreadPool]: On duckdb.information_schema: Close
+[0m18:32:10.619174 [debug] [MainThread]: Wrote artifact CatalogArtifact to /Users/takeshiiijima/github/duckdb-dbt/target/catalog.json
+[0m18:32:10.632257 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/takeshiiijima/github/duckdb-dbt/target/manifest.json
+[0m18:32:10.633152 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/takeshiiijima/github/duckdb-dbt/target/semantic_manifest.json
+[0m18:32:10.637948 [info ] [MainThread]: Catalog written to /Users/takeshiiijima/github/duckdb-dbt/target/catalog.json
+[0m18:32:10.639669 [debug] [MainThread]: Resource report: {"command_name": "generate", "command_success": true, "command_wall_clock_time": 0.8139265, "process_in_blocks": "0", "process_kernel_time": 0.186275, "process_mem_max_rss": "154206208", "process_out_blocks": "0", "process_user_time": 1.220828}
+[0m18:32:10.640301 [debug] [MainThread]: Command `dbt docs generate` succeeded at 18:32:10.640202 after 0.81 seconds
+[0m18:32:10.640652 [debug] [MainThread]: Connection 'generate_catalog' was properly closed.
+[0m18:32:10.640836 [debug] [MainThread]: Connection 'duckdb.information_schema' was properly closed.
+[0m18:32:10.641040 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105bc12d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103fb7b80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10671b220>]}
+[0m18:32:10.641339 [debug] [MainThread]: Flushing usage events
+[0m18:32:12.005166 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:35:02.538317 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1051e52a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105ff7460>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105ff6d10>]}
+
+
+============================== 18:35:02.541980 | 85aa21e7-c2b8-4351-b0b1-d428c03d6171 ==============================
+[0m18:35:02.541980 [info ] [MainThread]: Running with dbt=1.9.2
+[0m18:35:02.542340 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': '/Users/takeshiiijima/github/duckdb-dbt/logs', 'version_check': 'True', 'profiles_dir': '/Users/takeshiiijima/github/duckdb-dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt docs generate', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m18:35:02.695565 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '85aa21e7-c2b8-4351-b0b1-d428c03d6171', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1061791b0>]}
+[0m18:35:02.725018 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '85aa21e7-c2b8-4351-b0b1-d428c03d6171', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10549d030>]}
+[0m18:35:02.727775 [info ] [MainThread]: Registered adapter: duckdb=1.9.1
+[0m18:35:02.783196 [debug] [MainThread]: checksum: 12b12750b70de726cfd89136b8e24afc3f3e77597a97bff40ab7e5f9b39d5e18, vars: {}, profile: , target: , version: 1.9.2
+[0m18:35:02.865542 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m18:35:02.865810 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m18:35:02.896494 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '85aa21e7-c2b8-4351-b0b1-d428c03d6171', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1065cc100>]}
+[0m18:35:02.908469 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '85aa21e7-c2b8-4351-b0b1-d428c03d6171', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106595ea0>]}
+[0m18:35:02.908818 [info ] [MainThread]: Found 5 models, 4 seeds, 10 data tests, 426 macros
+[0m18:35:02.909025 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '85aa21e7-c2b8-4351-b0b1-d428c03d6171', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106595930>]}
+[0m18:35:02.910126 [info ] [MainThread]: 
+[0m18:35:02.910333 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m18:35:02.910498 [info ] [MainThread]: 
+[0m18:35:02.910770 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m18:35:02.913608 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_duckdb_main'
+[0m18:35:02.945751 [debug] [ThreadPool]: Using duckdb connection "list_duckdb_main"
+[0m18:35:02.946019 [debug] [ThreadPool]: On list_duckdb_main: BEGIN
+[0m18:35:02.946193 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m18:35:02.987199 [debug] [ThreadPool]: SQL status: OK in 0.041 seconds
+[0m18:35:02.987483 [debug] [ThreadPool]: Using duckdb connection "list_duckdb_main"
+[0m18:35:02.987663 [debug] [ThreadPool]: On list_duckdb_main: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "my_star_schema_profile", "target_name": "dev", "connection_name": "list_duckdb_main"} */
+select
+      'duckdb' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main'
+    and lower(table_catalog) = 'duckdb'
+  
+[0m18:35:03.002571 [debug] [ThreadPool]: SQL status: OK in 0.015 seconds
+[0m18:35:03.003663 [debug] [ThreadPool]: On list_duckdb_main: ROLLBACK
+[0m18:35:03.004217 [debug] [ThreadPool]: Failed to rollback 'list_duckdb_main'
+[0m18:35:03.004397 [debug] [ThreadPool]: On list_duckdb_main: Close
+[0m18:35:03.006975 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '85aa21e7-c2b8-4351-b0b1-d428c03d6171', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106594070>]}
+[0m18:35:03.008587 [debug] [Thread-1 (]: Began running node seed.my_star_schema_project.customers
+[0m18:35:03.008845 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_duckdb_main, now seed.my_star_schema_project.customers)
+[0m18:35:03.009039 [debug] [Thread-1 (]: Began compiling node seed.my_star_schema_project.customers
+[0m18:35:03.012914 [debug] [Thread-1 (]: Began executing node seed.my_star_schema_project.customers
+[0m18:35:03.013294 [debug] [Thread-1 (]: Finished running node seed.my_star_schema_project.customers
+[0m18:35:03.013496 [debug] [Thread-1 (]: Began running node seed.my_star_schema_project.dates
+[0m18:35:03.013761 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly seed.my_star_schema_project.customers, now seed.my_star_schema_project.dates)
+[0m18:35:03.013950 [debug] [Thread-1 (]: Began compiling node seed.my_star_schema_project.dates
+[0m18:35:03.014923 [debug] [Thread-1 (]: Began executing node seed.my_star_schema_project.dates
+[0m18:35:03.015228 [debug] [Thread-1 (]: Finished running node seed.my_star_schema_project.dates
+[0m18:35:03.015414 [debug] [Thread-1 (]: Began running node seed.my_star_schema_project.products
+[0m18:35:03.015644 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly seed.my_star_schema_project.dates, now seed.my_star_schema_project.products)
+[0m18:35:03.015823 [debug] [Thread-1 (]: Began compiling node seed.my_star_schema_project.products
+[0m18:35:03.016791 [debug] [Thread-1 (]: Began executing node seed.my_star_schema_project.products
+[0m18:35:03.017097 [debug] [Thread-1 (]: Finished running node seed.my_star_schema_project.products
+[0m18:35:03.017291 [debug] [Thread-1 (]: Began running node seed.my_star_schema_project.sales
+[0m18:35:03.017522 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly seed.my_star_schema_project.products, now seed.my_star_schema_project.sales)
+[0m18:35:03.017699 [debug] [Thread-1 (]: Began compiling node seed.my_star_schema_project.sales
+[0m18:35:03.018663 [debug] [Thread-1 (]: Began executing node seed.my_star_schema_project.sales
+[0m18:35:03.018959 [debug] [Thread-1 (]: Finished running node seed.my_star_schema_project.sales
+[0m18:35:03.019151 [debug] [Thread-1 (]: Began running node model.my_star_schema_project.dim_customers
+[0m18:35:03.019371 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly seed.my_star_schema_project.sales, now model.my_star_schema_project.dim_customers)
+[0m18:35:03.019555 [debug] [Thread-1 (]: Began compiling node model.my_star_schema_project.dim_customers
+[0m18:35:03.021109 [debug] [Thread-1 (]: Writing injected SQL for node "model.my_star_schema_project.dim_customers"
+[0m18:35:03.021685 [debug] [Thread-1 (]: Began executing node model.my_star_schema_project.dim_customers
+[0m18:35:03.022125 [debug] [Thread-1 (]: Finished running node model.my_star_schema_project.dim_customers
+[0m18:35:03.022343 [debug] [Thread-1 (]: Began running node model.my_star_schema_project.dim_dates
+[0m18:35:03.022679 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.my_star_schema_project.dim_customers, now model.my_star_schema_project.dim_dates)
+[0m18:35:03.022903 [debug] [Thread-1 (]: Began compiling node model.my_star_schema_project.dim_dates
+[0m18:35:03.024556 [debug] [Thread-1 (]: Writing injected SQL for node "model.my_star_schema_project.dim_dates"
+[0m18:35:03.025048 [debug] [Thread-1 (]: Began executing node model.my_star_schema_project.dim_dates
+[0m18:35:03.025396 [debug] [Thread-1 (]: Finished running node model.my_star_schema_project.dim_dates
+[0m18:35:03.025596 [debug] [Thread-1 (]: Began running node model.my_star_schema_project.dim_products
+[0m18:35:03.025829 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.my_star_schema_project.dim_dates, now model.my_star_schema_project.dim_products)
+[0m18:35:03.026018 [debug] [Thread-1 (]: Began compiling node model.my_star_schema_project.dim_products
+[0m18:35:03.027640 [debug] [Thread-1 (]: Writing injected SQL for node "model.my_star_schema_project.dim_products"
+[0m18:35:03.028000 [debug] [Thread-1 (]: Began executing node model.my_star_schema_project.dim_products
+[0m18:35:03.028336 [debug] [Thread-1 (]: Finished running node model.my_star_schema_project.dim_products
+[0m18:35:03.028532 [debug] [Thread-1 (]: Began running node model.my_star_schema_project.fact_sales
+[0m18:35:03.028868 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.my_star_schema_project.dim_products, now model.my_star_schema_project.fact_sales)
+[0m18:35:03.029124 [debug] [Thread-1 (]: Began compiling node model.my_star_schema_project.fact_sales
+[0m18:35:03.031409 [debug] [Thread-1 (]: Writing injected SQL for node "model.my_star_schema_project.fact_sales"
+[0m18:35:03.031935 [debug] [Thread-1 (]: Began executing node model.my_star_schema_project.fact_sales
+[0m18:35:03.032291 [debug] [Thread-1 (]: Finished running node model.my_star_schema_project.fact_sales
+[0m18:35:03.032493 [debug] [Thread-1 (]: Began running node test.my_star_schema_project.not_null_dim_customers_customer_city.f59e32635d
+[0m18:35:03.032758 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.my_star_schema_project.fact_sales, now test.my_star_schema_project.not_null_dim_customers_customer_city.f59e32635d)
+[0m18:35:03.032954 [debug] [Thread-1 (]: Began compiling node test.my_star_schema_project.not_null_dim_customers_customer_city.f59e32635d
+[0m18:35:03.039031 [debug] [Thread-1 (]: Writing injected SQL for node "test.my_star_schema_project.not_null_dim_customers_customer_city.f59e32635d"
+[0m18:35:03.039784 [debug] [Thread-1 (]: Began executing node test.my_star_schema_project.not_null_dim_customers_customer_city.f59e32635d
+[0m18:35:03.040182 [debug] [Thread-1 (]: Finished running node test.my_star_schema_project.not_null_dim_customers_customer_city.f59e32635d
+[0m18:35:03.040396 [debug] [Thread-1 (]: Began running node test.my_star_schema_project.not_null_dim_customers_customer_id.dd91cd1c8d
+[0m18:35:03.040662 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.my_star_schema_project.not_null_dim_customers_customer_city.f59e32635d, now test.my_star_schema_project.not_null_dim_customers_customer_id.dd91cd1c8d)
+[0m18:35:03.040904 [debug] [Thread-1 (]: Began compiling node test.my_star_schema_project.not_null_dim_customers_customer_id.dd91cd1c8d
+[0m18:35:03.043101 [debug] [Thread-1 (]: Writing injected SQL for node "test.my_star_schema_project.not_null_dim_customers_customer_id.dd91cd1c8d"
+[0m18:35:03.043578 [debug] [Thread-1 (]: Began executing node test.my_star_schema_project.not_null_dim_customers_customer_id.dd91cd1c8d
+[0m18:35:03.043924 [debug] [Thread-1 (]: Finished running node test.my_star_schema_project.not_null_dim_customers_customer_id.dd91cd1c8d
+[0m18:35:03.044144 [debug] [Thread-1 (]: Began running node test.my_star_schema_project.not_null_dim_customers_customer_name.c8ab2d704d
+[0m18:35:03.044382 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.my_star_schema_project.not_null_dim_customers_customer_id.dd91cd1c8d, now test.my_star_schema_project.not_null_dim_customers_customer_name.c8ab2d704d)
+[0m18:35:03.044577 [debug] [Thread-1 (]: Began compiling node test.my_star_schema_project.not_null_dim_customers_customer_name.c8ab2d704d
+[0m18:35:03.046605 [debug] [Thread-1 (]: Writing injected SQL for node "test.my_star_schema_project.not_null_dim_customers_customer_name.c8ab2d704d"
+[0m18:35:03.046925 [debug] [Thread-1 (]: Began executing node test.my_star_schema_project.not_null_dim_customers_customer_name.c8ab2d704d
+[0m18:35:03.047253 [debug] [Thread-1 (]: Finished running node test.my_star_schema_project.not_null_dim_customers_customer_name.c8ab2d704d
+[0m18:35:03.047452 [debug] [Thread-1 (]: Began running node test.my_star_schema_project.not_null_dim_customers_customer_state.7c7083b6aa
+[0m18:35:03.047669 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.my_star_schema_project.not_null_dim_customers_customer_name.c8ab2d704d, now test.my_star_schema_project.not_null_dim_customers_customer_state.7c7083b6aa)
+[0m18:35:03.047928 [debug] [Thread-1 (]: Began compiling node test.my_star_schema_project.not_null_dim_customers_customer_state.7c7083b6aa
+[0m18:35:03.049919 [debug] [Thread-1 (]: Writing injected SQL for node "test.my_star_schema_project.not_null_dim_customers_customer_state.7c7083b6aa"
+[0m18:35:03.050217 [debug] [Thread-1 (]: Began executing node test.my_star_schema_project.not_null_dim_customers_customer_state.7c7083b6aa
+[0m18:35:03.050539 [debug] [Thread-1 (]: Finished running node test.my_star_schema_project.not_null_dim_customers_customer_state.7c7083b6aa
+[0m18:35:03.050734 [debug] [Thread-1 (]: Began running node test.my_star_schema_project.unique_dim_customers_customer_id.15c9f1e2fd
+[0m18:35:03.050949 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.my_star_schema_project.not_null_dim_customers_customer_state.7c7083b6aa, now test.my_star_schema_project.unique_dim_customers_customer_id.15c9f1e2fd)
+[0m18:35:03.051144 [debug] [Thread-1 (]: Began compiling node test.my_star_schema_project.unique_dim_customers_customer_id.15c9f1e2fd
+[0m18:35:03.054453 [debug] [Thread-1 (]: Writing injected SQL for node "test.my_star_schema_project.unique_dim_customers_customer_id.15c9f1e2fd"
+[0m18:35:03.054901 [debug] [Thread-1 (]: Began executing node test.my_star_schema_project.unique_dim_customers_customer_id.15c9f1e2fd
+[0m18:35:03.055245 [debug] [Thread-1 (]: Finished running node test.my_star_schema_project.unique_dim_customers_customer_id.15c9f1e2fd
+[0m18:35:03.055519 [debug] [Thread-1 (]: Began running node test.my_star_schema_project.not_null_dim_products_price.93519fc0ed
+[0m18:35:03.055818 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.my_star_schema_project.unique_dim_customers_customer_id.15c9f1e2fd, now test.my_star_schema_project.not_null_dim_products_price.93519fc0ed)
+[0m18:35:03.056049 [debug] [Thread-1 (]: Began compiling node test.my_star_schema_project.not_null_dim_products_price.93519fc0ed
+[0m18:35:03.059098 [debug] [Thread-1 (]: Writing injected SQL for node "test.my_star_schema_project.not_null_dim_products_price.93519fc0ed"
+[0m18:35:03.059675 [debug] [Thread-1 (]: Began executing node test.my_star_schema_project.not_null_dim_products_price.93519fc0ed
+[0m18:35:03.060032 [debug] [Thread-1 (]: Finished running node test.my_star_schema_project.not_null_dim_products_price.93519fc0ed
+[0m18:35:03.060239 [debug] [Thread-1 (]: Began running node test.my_star_schema_project.not_null_dim_products_product_category.069796c541
+[0m18:35:03.060482 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.my_star_schema_project.not_null_dim_products_price.93519fc0ed, now test.my_star_schema_project.not_null_dim_products_product_category.069796c541)
+[0m18:35:03.060711 [debug] [Thread-1 (]: Began compiling node test.my_star_schema_project.not_null_dim_products_product_category.069796c541
+[0m18:35:03.062702 [debug] [Thread-1 (]: Writing injected SQL for node "test.my_star_schema_project.not_null_dim_products_product_category.069796c541"
+[0m18:35:03.063038 [debug] [Thread-1 (]: Began executing node test.my_star_schema_project.not_null_dim_products_product_category.069796c541
+[0m18:35:03.063380 [debug] [Thread-1 (]: Finished running node test.my_star_schema_project.not_null_dim_products_product_category.069796c541
+[0m18:35:03.063579 [debug] [Thread-1 (]: Began running node test.my_star_schema_project.not_null_dim_products_product_id.c8aba288d1
+[0m18:35:03.063796 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.my_star_schema_project.not_null_dim_products_product_category.069796c541, now test.my_star_schema_project.not_null_dim_products_product_id.c8aba288d1)
+[0m18:35:03.063984 [debug] [Thread-1 (]: Began compiling node test.my_star_schema_project.not_null_dim_products_product_id.c8aba288d1
+[0m18:35:03.066030 [debug] [Thread-1 (]: Writing injected SQL for node "test.my_star_schema_project.not_null_dim_products_product_id.c8aba288d1"
+[0m18:35:03.066511 [debug] [Thread-1 (]: Began executing node test.my_star_schema_project.not_null_dim_products_product_id.c8aba288d1
+[0m18:35:03.066855 [debug] [Thread-1 (]: Finished running node test.my_star_schema_project.not_null_dim_products_product_id.c8aba288d1
+[0m18:35:03.067060 [debug] [Thread-1 (]: Began running node test.my_star_schema_project.not_null_dim_products_product_name.991aec73f3
+[0m18:35:03.067274 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.my_star_schema_project.not_null_dim_products_product_id.c8aba288d1, now test.my_star_schema_project.not_null_dim_products_product_name.991aec73f3)
+[0m18:35:03.067465 [debug] [Thread-1 (]: Began compiling node test.my_star_schema_project.not_null_dim_products_product_name.991aec73f3
+[0m18:35:03.069553 [debug] [Thread-1 (]: Writing injected SQL for node "test.my_star_schema_project.not_null_dim_products_product_name.991aec73f3"
+[0m18:35:03.069846 [debug] [Thread-1 (]: Began executing node test.my_star_schema_project.not_null_dim_products_product_name.991aec73f3
+[0m18:35:03.070171 [debug] [Thread-1 (]: Finished running node test.my_star_schema_project.not_null_dim_products_product_name.991aec73f3
+[0m18:35:03.070371 [debug] [Thread-1 (]: Began running node test.my_star_schema_project.unique_dim_products_product_id.ef7b2a9985
+[0m18:35:03.070592 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.my_star_schema_project.not_null_dim_products_product_name.991aec73f3, now test.my_star_schema_project.unique_dim_products_product_id.ef7b2a9985)
+[0m18:35:03.070782 [debug] [Thread-1 (]: Began compiling node test.my_star_schema_project.unique_dim_products_product_id.ef7b2a9985
+[0m18:35:03.072735 [debug] [Thread-1 (]: Writing injected SQL for node "test.my_star_schema_project.unique_dim_products_product_id.ef7b2a9985"
+[0m18:35:03.073076 [debug] [Thread-1 (]: Began executing node test.my_star_schema_project.unique_dim_products_product_id.ef7b2a9985
+[0m18:35:03.073407 [debug] [Thread-1 (]: Finished running node test.my_star_schema_project.unique_dim_products_product_id.ef7b2a9985
+[0m18:35:03.073606 [debug] [Thread-1 (]: Began running node model.my_star_schema_project.star_schema_view
+[0m18:35:03.073854 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.my_star_schema_project.unique_dim_products_product_id.ef7b2a9985, now model.my_star_schema_project.star_schema_view)
+[0m18:35:03.074045 [debug] [Thread-1 (]: Began compiling node model.my_star_schema_project.star_schema_view
+[0m18:35:03.075851 [debug] [Thread-1 (]: Writing injected SQL for node "model.my_star_schema_project.star_schema_view"
+[0m18:35:03.076266 [debug] [Thread-1 (]: Began executing node model.my_star_schema_project.star_schema_view
+[0m18:35:03.076594 [debug] [Thread-1 (]: Finished running node model.my_star_schema_project.star_schema_view
+[0m18:35:03.077062 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m18:35:03.077230 [debug] [MainThread]: Connection 'model.my_star_schema_project.star_schema_view' was properly closed.
+[0m18:35:03.078526 [debug] [MainThread]: Command end result
+[0m18:35:03.156887 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/takeshiiijima/github/duckdb-dbt/target/manifest.json
+[0m18:35:03.158685 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/takeshiiijima/github/duckdb-dbt/target/semantic_manifest.json
+[0m18:35:03.163189 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/takeshiiijima/github/duckdb-dbt/target/run_results.json
+[0m18:35:03.165482 [debug] [MainThread]: Acquiring new duckdb connection 'generate_catalog'
+[0m18:35:03.165681 [info ] [MainThread]: Building catalog
+[0m18:35:03.171320 [debug] [ThreadPool]: Acquiring new duckdb connection 'duckdb.information_schema'
+[0m18:35:03.176006 [debug] [ThreadPool]: Using duckdb connection "duckdb.information_schema"
+[0m18:35:03.176450 [debug] [ThreadPool]: On duckdb.information_schema: BEGIN
+[0m18:35:03.176689 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m18:35:03.182276 [debug] [ThreadPool]: SQL status: OK in 0.006 seconds
+[0m18:35:03.182551 [debug] [ThreadPool]: Using duckdb connection "duckdb.information_schema"
+[0m18:35:03.182752 [debug] [ThreadPool]: On duckdb.information_schema: /* {"app": "dbt", "dbt_version": "1.9.2", "profile_name": "my_star_schema_profile", "target_name": "dev", "connection_name": "duckdb.information_schema"} */
+with relations AS (
+      select
+        t.table_name
+        , t.database_name
+        , t.schema_name
+        , 'BASE TABLE' as table_type
+        , t.comment as table_comment
+      from duckdb_tables() t
+      WHERE t.database_name = 'duckdb'
+      UNION ALL
+      SELECT v.view_name as table_name
+      , v.database_name
+      , v.schema_name
+      , 'VIEW' as table_type
+      , v.comment as table_comment
+      from duckdb_views() v
+      WHERE v.database_name = 'duckdb'
+    )
+    select
+        'duckdb' as table_database,
+        r.schema_name as table_schema,
+        r.table_name,
+        r.table_type,
+        r.table_comment,
+        c.column_name,
+        c.column_index as column_index,
+        c.data_type as column_type,
+        c.comment as column_comment,
+        '' as table_owner
+    FROM relations r JOIN duckdb_columns() c ON r.schema_name = c.schema_name AND r.table_name = c.table_name
+    WHERE (upper(r.schema_name) = upper('main'))
+    ORDER BY
+        r.schema_name,
+        r.table_name,
+        c.column_index
+[0m18:35:03.196164 [debug] [ThreadPool]: SQL status: OK in 0.013 seconds
+[0m18:35:03.212100 [debug] [ThreadPool]: On duckdb.information_schema: ROLLBACK
+[0m18:35:03.212388 [debug] [ThreadPool]: Failed to rollback 'duckdb.information_schema'
+[0m18:35:03.212554 [debug] [ThreadPool]: On duckdb.information_schema: Close
+[0m18:35:03.228490 [debug] [MainThread]: Wrote artifact CatalogArtifact to /Users/takeshiiijima/github/duckdb-dbt/target/catalog.json
+[0m18:35:03.241679 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/takeshiiijima/github/duckdb-dbt/target/manifest.json
+[0m18:35:03.242578 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/takeshiiijima/github/duckdb-dbt/target/semantic_manifest.json
+[0m18:35:03.242761 [info ] [MainThread]: Catalog written to /Users/takeshiiijima/github/duckdb-dbt/target/catalog.json
+[0m18:35:03.245118 [debug] [MainThread]: Resource report: {"command_name": "generate", "command_success": true, "command_wall_clock_time": 0.74952674, "process_in_blocks": "0", "process_kernel_time": 0.187721, "process_mem_max_rss": "136839168", "process_out_blocks": "0", "process_user_time": 1.238154}
+[0m18:35:03.245401 [debug] [MainThread]: Command `dbt docs generate` succeeded at 18:35:03.245351 after 0.75 seconds
+[0m18:35:03.245598 [debug] [MainThread]: Connection 'generate_catalog' was properly closed.
+[0m18:35:03.245748 [debug] [MainThread]: Connection 'duckdb.information_schema' was properly closed.
+[0m18:35:03.245927 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1051e52a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10549d030>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1062566b0>]}
+[0m18:35:03.246139 [debug] [MainThread]: Flushing usage events
+[0m18:35:04.187937 [debug] [MainThread]: An error was encountered while trying to flush usage events
