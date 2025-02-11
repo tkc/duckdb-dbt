@@ -1,0 +1,4 @@
+sale_id,customer_id,product_id,date_key,quantity,total_amount
+1,1,1,20220101,2,39.98
+2,2,2,20220102,1,29.99
+3,3,3,20220103,3,119.97

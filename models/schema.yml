@@ -1,0 +1,44 @@
+version: 2
+
+models:
+  - name: dim_customers
+    description: "顧客情報を保持するディメンションテーブル"
+    columns:
+      - name: customer_id
+        description: "顧客ID"
+        tests:
+          - not_null
+          - unique
+      - name: customer_name
+        description: "顧客名"
+        tests:
+          - not_null
+      - name: customer_city
+        description: "顧客の都市"
+        tests:
+          - not_null
+      - name: customer_state
+        description: "顧客の州"
+        tests:
+          - not_null
+
+  - name: dim_products
+    description: "製品情報を保持するディメンションテーブル"
+    columns:
+      - name: product_id
+        description: "製品ID"
+        tests:
+          - not_null
+          - unique
+      - name: product_name
+        description: "製品名"
+        tests:
+          - not_null
+      - name: product_category
+        description: "製品カテゴリー"
+        tests:
+          - not_null
+      - name: price
+        description: "製品の価格"
+        tests:
+          - not_null
